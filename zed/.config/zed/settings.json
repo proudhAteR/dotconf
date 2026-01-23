@@ -5,8 +5,8 @@
     "use_system_prompts": false,
     "theme": "One Dark Pro",
     "icon_theme": "Catppuccin Latte",
-    "ui_font_family": "SF Mono",
-    "buffer_font_family": "SF Mono",
+    "ui_font_family": "JetBrains Mono",
+    "buffer_font_family": "JetBrains Mono",
     "buffer_font_features": {
         "calt": 0
     },

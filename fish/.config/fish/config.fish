@@ -88,7 +88,7 @@ if status is-interactive
     # Docker
     abbr --add d "docker"
     abbr --add dc "docker compose"
-    abbr --add dup "docker compose up -d"
+    abbr --add dup "docker compose up"
     abbr --add dwn "docker compose down"
     
     # Fly.io
@@ -105,6 +105,7 @@ if status is-interactive
     abbr --add ff "find . -type f | fzf"
     abbr --add keygen "openssl rand -base64 32"
     abbr --add z "zed"
+    abbr --add econf "ghostty +edit-config"
 
     # Reload Config
     abbr --add reload "source ~/.config/fish/config.fish"

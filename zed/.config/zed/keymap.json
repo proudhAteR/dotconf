@@ -38,5 +38,11 @@
         "bindings": {
             "alt-cmd-g": "git_panel::ToggleFocus"
         }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "cmd-enter": "editor::ToggleCodeActions"
+        }
     }
 ]
