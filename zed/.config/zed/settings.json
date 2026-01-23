@@ -3,13 +3,10 @@
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
     "use_system_prompts": false,
-    "theme": "One Dark",
-    "icon_theme": "Material Icon Theme",
-    "ui_font_family": "JetBrains Mono NL",
-    "ui_font_weight": 400.0,
-    "buffer_font_family": "JetBrains Mono NL",
-    "buffer_font_weight": 400.0,
-    "buffer_line_height": "comfortable",
+    "theme": "One Dark Pro",
+    "icon_theme": "Catppuccin Latte",
+    "ui_font_family": "SF Mono",
+    "buffer_font_family": "SF Mono",
     "buffer_font_features": {
         "calt": 0
     },
@@ -31,6 +28,11 @@
     },
     "indent_guides": {
         "coloring": "fixed"
+    },
+    "file_finder": {
+        "git_status": true,
+        "modal_max_width": "medium",
+        "include_ignored": "all"
     },
     "zoomed_padding": true,
     "bottom_dock_layout": "contained",
@@ -82,7 +84,7 @@
     "tab_size": 4,
     "hard_tabs": false,
     "format_on_save": "on",
-    "formatter": "auto",
+    "formatter": "language_server",
     "remove_trailing_whitespace_on_save": true,
     "ensure_final_newline_on_save": true,
     "code_actions_on_format": {
@@ -114,7 +116,7 @@
         "auto_fold_dirs": false,
         "git_status": true,
         "hide_root": true,
-        "hide_gitignore": false,
+        "hide_gitignore": true,
         "indent_guides": {
             "show": "always"
         },
@@ -152,8 +154,9 @@
     "languages": {
         "CSS": {
             "language_servers": [
-                "tailwindcss-language-server",
-                "vscode-css-languageservice"
+                "tailwindcss-intellisense-css",
+                "!vscode-css-language-server",
+                "..."
             ]
         },
         "Swift": {
@@ -167,31 +170,44 @@
         "PHP": {
             "language_servers": [
                 "intelephense",
-                "!phpactor"
+                "!phpactor",
+                "!phptools",
+                "!emmet",
+                "..."
             ],
             "format_on_save": "on",
             "formatter": "language_server"
+        },
+        "Latte": {
+            "language_servers": [
+                "tailwindcss-language-server",
+                "!emmet",
+                "intelephense"
+            ]
         }
     },
     "lsp": {
         "tailwindcss-language-server": {
             "settings": {
                 "classFunctions": [
-                    "cva",
-                    "cx"
+                    "tw",
+                    "clsx",
+                    "tw\\.[a-z-]+"
                 ],
                 "experimental": {
                     "classRegex": [
-                        "[cls|className]\\s\\:\\=\\s\"([^\"]*)"
+                        // Matches: class => "..." or class: "..." (Latte params/arrays)
+                        "(?:class|className)\\s*(?:=>|:)\\s*[\"']([^\"']*)[\"']",
+                        // Matches: $class = "..." or $myClass = "..." (Latte variables)
+                        "\\$[a-zA-Z]*[Cc]lass(?:Name)?\\s*=\\s*[\"']([^\"']*)[\"']"
                     ]
                 },
-                "tailwindCSS": {
-                    "emmetCompletions": true
-                },
-                "tailwindCSS.includeLanguages": {
+                "emmetCompletions": true,
+                "includeLanguages": {
                     "latte": "html",
                     "pug": "html"
-                }
+                },
+                "hovers": true
             }
         },
         "sourcekit-lsp": {
@@ -215,6 +231,17 @@
                     }
                 }
             }
+        },
+        "yaml-language-server": {
+            "settings": {
+                "yaml": {
+                    "customTags": [
+                        "!env scalar",
+                        "!env sequence",
+                        "!env mapping"
+                    ]
+                }
+            }
         }
     },
     // ──────────────────────────────────────────────────────────────────────────────
@@ -231,6 +258,9 @@
         "pug": [
             "*.pug",
             "*.jade"
+        ],
+        "latte": [
+            "*.latte"
         ]
     },
     "file_scan_exclusions": [

@@ -78,10 +78,11 @@ if status is-interactive
     abbr --add gf "git fetch --prune"
     abbr --add gpl "git pull --rebase"
     abbr --add gd "git diff"
-    abbr --add gl "git log --oneline --graph --decorate --all"
     abbr --add gch "git checkout"
     abbr --add gb "git branch"
     abbr --add gm "git merge"
+    abbr --add gst "git stash"
+    abbr --add gsp "git stash pop"
 
     # Docker
     abbr --add d "docker"
