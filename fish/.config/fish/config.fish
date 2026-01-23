@@ -80,7 +80,7 @@ if status is-interactive
     abbr --add gu "git fetch --prune && git pull --rebase"
     abbr --add gpl "git pull --rebase"
     abbr --add gd "git diff"
-    abbr --add gch "git checkout"
+    abbr --add go "git checkout"
     abbr --add gb "git branch"
     abbr --add gm "git merge"
     abbr --add gst "git stash"
