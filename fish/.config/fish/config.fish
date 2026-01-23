@@ -33,7 +33,7 @@ end
 # ─── Interactive Session Only ─────────────────────────────────────────────────
 if status is-interactive
 
-    # 1. Fastfetch (System Info)
+    # Fastfetch (System Info)
     if type -q fastfetch
         fastfetch
     end
@@ -85,23 +85,23 @@ if status is-interactive
     # Docker
     abbr --add d "docker"
     abbr --add dc "docker compose"
-    abbr --add dockup "docker compose up -d"
-    abbr --add dockdwn "docker compose down"
-    abbr --add dlogs "docker compose logs -f"
-
+    abbr --add dup "docker compose up -d"
+    abbr --add dwn "docker compose down"
+    
     # Fly.io
-    if type -q flyctl
-        abbr --add f "flyctl"
-        abbr --add fdeploy "flyctl deploy"
-        abbr --add fstatus "flyctl status"
-        abbr --add flogs "flyctl logs"
-        abbr --add fssh "flyctl ssh console"
+    if type -q fly
+        abbr --add f "fly"
+        abbr --add fdeploy "fly deploy"
+        abbr --add fstatus "fly status"
+        abbr --add flogs "fly logs"
+        abbr --add fssh "fly ssh console"
     end
 
     # Utils
     abbr --add cl "clear"
     abbr --add ff "find . -type f | fzf"
     abbr --add keygen "openssl rand -base64 32"
+    abbr --add z "zed"
 
     # Reload Config
     abbr --add reload "source ~/.config/fish/config.fish"
