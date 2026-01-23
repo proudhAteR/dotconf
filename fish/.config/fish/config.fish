@@ -1,34 +1,108 @@
+# ─── Environment Variables ────────────────────────────────────────────────────
+# Disable the default greeting (use -g to avoid writing to universal variables on every shell launch)
+set -g fish_greeting
+
+# Editor setup
+if type -q zed
+    set -gx EDITOR "zed --wait"
+end
+
+# ─── Path & Integrations ──────────────────────────────────────────────────────
+
+# 1. Homebrew (macOS)
+if test -d /opt/homebrew
+    eval (/opt/homebrew/bin/brew shellenv)
+end
+
+# 2. OrbStack
+if test -f ~/.orbstack/shell/init.fish
+    source ~/.orbstack/shell/init.fish 2>/dev/null || :
+end
+
+# 3. Zoxide (Better 'cd')
+if type -q zoxide
+    zoxide init fish --cmd cd | source
+end
+
+# 4. Fly.io
+set -gx FLYCTL_INSTALL "$HOME/.fly"
+if test -d "$FLYCTL_INSTALL/bin"
+    fish_add_path "$FLYCTL_INSTALL/bin"
+end
+
+# ─── Interactive Session Only ─────────────────────────────────────────────────
 if status is-interactive
-    # 1. Remove the default greeting
-    set -U fish_greeting
 
-    # 2. OrbStack Setup
-    # OrbStack usually places its init script here. We check if it exists first.
-    if test -f ~/.orbstack/shell/init.fish
-        source ~/.orbstack/shell/init.fish 2>/dev/null || :
-    end
-
-    # 3. Zoxide (Replacting 'cd')
-    # The '--cmd cd' flag tells zoxide to replace the standard 'cd' command
-    if type -q zoxide
-        zoxide init fish --cmd cd | source
-    end
-
-    # 4. Fastfetch
-    # Run this only if we are in a terminal that can display it clearly
+    # 1. Fastfetch (System Info)
     if type -q fastfetch
         fastfetch
     end
 
-    # 5. FZF + Find Abbreviations
-    # 'ff' will expand to a command that searches files with find and pipes to fzf
-    abbr --add ff "find . -type f | fzf"
-    
-    
-    # 6. Homebrew (Standard macOS Setup)
-    if test -d /opt/homebrew
-        eval (/opt/homebrew/bin/brew shellenv)
+    # ─── Abbreviations & Aliases ──────────────────────────────────────────────
+
+    # Navigation
+    abbr --add .. "cd .."
+    abbr --add ... "cd ../.."
+    abbr --add .... "cd ../../.."
+
+    # Files & Safety
+    # Force confirmation on overwrites/deletes
+    alias mv="mv -i"
+    alias cp="cp -i"
+    alias rm="rm -i"
+
+    # Modern 'ls' replacement: 'eza' (if installed), otherwise standard 'ls'
+    if type -q eza
+        alias ls="eza --icons --group-directories-first"
+        alias ll="eza -l --icons --group-directories-first --git"
+        alias la="eza -la --icons --group-directories-first --git"
+        alias tree="eza --tree --icons"
+    else
+        alias ll="ls -l"
+        alias la="ls -la"
     end
-    
-    abbr --add cl clear
+
+    # Modern 'cat' replacement: 'bat' (if installed)
+    if type -q bat
+        alias cat="bat"
+    end
+
+    # Git (The Essentials)
+    abbr --add g "git"
+    abbr --add gs "git status -s"
+    abbr --add ga "git add"
+    abbr --add gaa "git add ."
+    abbr --add gc "git commit -m"
+    abbr --add gca "git commit -am"
+    abbr --add gp "git push"
+    abbr --add gf "git fetch --prune"
+    abbr --add gpl "git pull --rebase"
+    abbr --add gd "git diff"
+    abbr --add gl "git log --oneline --graph --decorate --all"
+    abbr --add gch "git checkout"
+    abbr --add gb "git branch"
+
+    # Docker
+    abbr --add d "docker"
+    abbr --add dc "docker compose"
+    abbr --add dockup "docker compose up -d"
+    abbr --add dockdwn "docker compose down"
+    abbr --add dlogs "docker compose logs -f"
+
+    # Fly.io
+    if type -q flyctl
+        abbr --add f "flyctl"
+        abbr --add fdeploy "flyctl deploy"
+        abbr --add fstatus "flyctl status"
+        abbr --add flogs "flyctl logs"
+        abbr --add fssh "flyctl ssh console"
+    end
+
+    # Utils
+    abbr --add cl "clear"
+    abbr --add ff "find . -type f | fzf"
+    abbr --add keygen "openssl rand -base64 32"
+
+    # Reload Config
+    abbr --add reload "source ~/.config/fish/config.fish"
 end

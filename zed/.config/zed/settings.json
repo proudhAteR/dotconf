@@ -5,9 +5,9 @@
     "use_system_prompts": false,
     "theme": "One Dark",
     "icon_theme": "Material Icon Theme",
-    "ui_font_family": "SF Mono",
+    "ui_font_family": "JetBrains Mono NL",
     "ui_font_weight": 400.0,
-    "buffer_font_family": "SF Mono",
+    "buffer_font_family": "JetBrains Mono NL",
     "buffer_font_weight": 400.0,
     "buffer_line_height": "comfortable",
     "buffer_font_features": {
@@ -105,7 +105,6 @@
     "auto_indent_on_paste": true,
     "always_treat_brackets_as_autoclosed": true,
     "colorize_brackets": false,
-    "excerpt_context_lines": 2,
     "expand_excerpt_lines": 6,
     // ──────────────────────────────────────────────────────────────────────────────
     // 🌲 PANEL CONFIGURATIONS
@@ -144,7 +143,7 @@
         "git_gutter": "tracked_files",
         "inline_blame": {
             "enabled": true,
-            "show_commit_summary": false
+            "show_commit_summary": true
         }
     },
     // ──────────────────────────────────────────────────────────────────────────────
@@ -252,6 +251,7 @@
     // 💻 TERMINAL
     // ──────────────────────────────────────────────────────────────────────────────
     "terminal": {
+        "font_family": "JetBrains Mono NL",
         "scrollbar": {
             "show": "never"
         },
