@@ -76,8 +76,9 @@ if status is-interactive
     abbr --add gc "git commit -m"
     abbr --add gca "git commit -am"
     abbr --add gp "git push"
+    abbr --add gf "git fetch"
     abbr --add gu "git fetch --prune && git pull --rebase"
-    abbr --add gf "git pull --rebase"
+    abbr --add gpl "git pull --rebase"
     abbr --add gd "git diff"
     abbr --add gch "git checkout"
     abbr --add gb "git branch"
@@ -90,7 +91,7 @@ if status is-interactive
     abbr --add dc "docker compose"
     abbr --add dup "docker compose up"
     abbr --add dwn "docker compose down"
-    
+
     # Fly.io
     if type -q fly
         abbr --add f "fly"
@@ -103,9 +104,9 @@ if status is-interactive
     # Utils
     abbr --add cl "clear"
     abbr --add ff "find . -type f | fzf"
-    abbr --add keygen "openssl rand -base64 32"
+    abbr --add keygen "openssl rand -base64"
     abbr --add z "zed"
-    abbr --add econf "ghostty +edit-config"
+    alias econf="ghostty +edit-config"
 
     # Reload Config
     abbr --add reload "source ~/.config/fish/config.fish"

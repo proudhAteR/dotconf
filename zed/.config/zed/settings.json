@@ -2,13 +2,12 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
-    "use_system_prompts": false,
-    "theme": "One Dark Pro",
+    "use_system_prompts": true,
+    "theme": "One Dark",
     "icon_theme": "Catppuccin Latte",
-    "ui_font_family": "JetBrains Mono",
-    "buffer_font_family": "JetBrains Mono",
+    "ui_font_family": ".ZedMono",
     "buffer_font_features": {
-        "calt": 0
+        "calt": 0,
     },
     "centered_layout": {
         "left_padding": 0.15,
@@ -48,7 +47,7 @@
     "show_whitespaces": "selection",
     "scroll_beyond_last_line": "off",
     "double_click_in_multibuffer": "open",
-    "confirm_quit": true,
+    "confirm_quit": false,
     "autosave": {
         "after_delay": {
             "milliseconds": 750
@@ -73,7 +72,7 @@
         "always_allow_tool_actions": true,
         "default_model": {
             "provider": "google",
-            "model": "gemini-3-pro-preview"
+            "model": "gemini-3-pro"
         },
         "model_parameters": [],
         "enabled": true
