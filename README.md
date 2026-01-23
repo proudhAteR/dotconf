@@ -8,7 +8,7 @@ A collection of configuration files for my development environment on macOS.
 - **Editor**: Zed
 - **Terminal**: Ghostty
 - **Tools**: GitHub CLI, Bat, Eza, Fly.io
-- **System**: Raycast, OrbStack, Karabiner Elements
+- **System**: Raycast, OrbStack
 
 ## 🚀 Installation Guide
 
