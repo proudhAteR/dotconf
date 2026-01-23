@@ -81,6 +81,7 @@ if status is-interactive
     abbr --add gl "git log --oneline --graph --decorate --all"
     abbr --add gch "git checkout"
     abbr --add gb "git branch"
+    abbr --add gm "git merge"
 
     # Docker
     abbr --add d "docker"
