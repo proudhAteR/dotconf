@@ -37,6 +37,7 @@ if status is-interactive
     if type -q fastfetch
         fastfetch
     end
+    abbr --add fast fastfetch
 
     # ─── Abbreviations & Aliases ──────────────────────────────────────────────
 
