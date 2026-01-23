@@ -1,0 +1,269 @@
+{
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 🖼️ UI & THEME
+    // ──────────────────────────────────────────────────────────────────────────────
+    "theme": "Catppuccin Frappé (Blur)",
+    "icon_theme": "Catppuccin Latte",
+    "ui_font_family": "SF Mono",
+    "ui_font_size": 16.0,
+    "ui_font_weight": 400.0,
+    "buffer_font_family": "SF Mono",
+    "buffer_font_size": 15.0,
+    "buffer_font_weight": 400.0,
+    "buffer_line_height": "comfortable",
+    "buffer_font_features": {
+        "calt": 0
+    },
+    "centered_layout": {
+        "left_padding": 0.15,
+        "right_padding": 0.15
+    },
+    "scrollbar": {
+        "show": "never"
+    },
+    "tabs": {
+        "file_icons": true,
+        "show_close_button": "hidden"
+    },
+    "max_tabs": 3,
+    "toolbar": {
+        "breadcrumbs": true,
+        "quick_actions": false
+    },
+    "indent_guides": {
+        "coloring": "fixed"
+    },
+    "drop_target_size": 0.2,
+    "zoomed_padding": true,
+    "bottom_dock_layout": "contained",
+    // ──────────────────────────────────────────────────────────────────────────────
+    // ✍️ EDITOR BEHAVIOR & UX
+    // ──────────────────────────────────────────────────────────────────────────────
+    "base_keymap": "VSCode",
+    "cursor_shape": "block",
+    "cursor_blink": true,
+    "hide_mouse": "on_typing_and_movement",
+    "current_line_highlight": "none",
+    "rounded_selection": true,
+    "show_whitespaces": "selection",
+    "scroll_beyond_last_line": "off",
+    "double_click_in_multibuffer": "open",
+    "confirm_quit": true,
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 750
+        }
+    },
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 🧠 INTELLISENSE & AI
+    // ──────────────────────────────────────────────────────────────────────────────
+    "enable_language_server": true,
+    "auto_signature_help": true,
+    "lsp_document_colors": "inlay",
+    "show_completions_on_input": true,
+    "snippet_sort_order": "top",
+    "completions": {
+        "words_min_length": 3,
+        "lsp": true
+    },
+    "features": {
+        "edit_prediction_provider": "none"
+    },
+    "agent": {
+        "always_allow_tool_actions": true,
+        "default_model": {
+            "provider": "google",
+            "model": "gemini-3-pro-preview"
+        },
+        "model_parameters": [],
+        "enabled": true
+    },
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 🧰 FORMATTING & CODING STANDARDS
+    // ──────────────────────────────────────────────────────────────────────────────
+    "tab_size": 4,
+    "hard_tabs": false,
+    "format_on_save": "on",
+    "formatter": "auto",
+    "remove_trailing_whitespace_on_save": true,
+    "ensure_final_newline_on_save": true,
+    "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.esLint": true
+    },
+    "prettier": {
+        "allowed": false
+    },
+    "inlay_hints": {
+        "show_background": false,
+        "enabled": true,
+        "show_type_hints": true
+    },
+    "soft_wrap": "preferred_line_length",
+    "preferred_line_length": 120,
+    "allow_rewrap": "in_comments",
+    "use_autoclose": true,
+    "auto_indent": true,
+    "auto_indent_on_paste": true,
+    "always_treat_brackets_as_autoclosed": true,
+    "colorize_brackets": false,
+    "excerpt_context_lines": 2,
+    "expand_excerpt_lines": 6,
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 🌲 PANEL CONFIGURATIONS
+    // ──────────────────────────────────────────────────────────────────────────────
+    "project_panel": {
+        "dock": "left",
+        "auto_fold_dirs": false,
+        "git_status": true,
+        "hide_root": true,
+        "hide_gitignore": false,
+        "indent_guides": {
+            "show": "always"
+        },
+        "entry_spacing": "comfortable"
+    },
+    "git_panel": {
+        "tree_view": true,
+        "dock": "left"
+    },
+    "outline_panel": {
+        "dock": "right"
+    },
+    "collaboration_panel": {
+        "dock": "right"
+    },
+    "notification_panel": {
+        "dock": "right"
+    },
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 🌿 GIT SETTINGS
+    // ──────────────────────────────────────────────────────────────────────────────
+    "git": {
+        "blame": {
+            "show_avatar": true
+        },
+        "git_gutter": "tracked_files",
+        "inline_blame": {
+            "enabled": true,
+            "show_commit_summary": false
+        }
+    },
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 🧩 LANGUAGE SPECIFIC & LSP
+    // ──────────────────────────────────────────────────────────────────────────────
+    "languages": {
+        "CSS": {
+            "language_servers": [
+                "tailwindcss-language-server",
+                "vscode-css-languageservice"
+            ]
+        },
+        "Swift": {
+            "enable_language_server": true,
+            "language_servers": [
+                "sourcekit-lsp"
+            ],
+            "formatter": "language_server",
+            "format_on_save": "on"
+        },
+        "PHP": {
+            "language_servers": [
+                "intelephense",
+                "!phpactor"
+            ],
+            "format_on_save": "on",
+            "formatter": "language_server"
+        }
+    },
+    "lsp": {
+        "tailwindcss-language-server": {
+            "settings": {
+                "classFunctions": [
+                    "cva",
+                    "cx"
+                ],
+                "experimental": {
+                    "classRegex": [
+                        "[cls|className]\\s\\:\\=\\s\"([^\"]*)"
+                    ]
+                },
+                "tailwindCSS": {
+                    "emmetCompletions": true
+                },
+                "tailwindCSS.includeLanguages": {
+                    "latte": "html",
+                    "pug": "html"
+                }
+            }
+        },
+        "sourcekit-lsp": {
+            "binary": {
+                "path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp"
+            }
+        },
+        "vtsls": {
+            "settings": {
+                "typescript": {
+                    "format": {
+                        "semicolons": "insert",
+                        "trimTrailingWhitespace": true,
+                        "trimTrailingCommas": true
+                    }
+                },
+                "javascript": {
+                    "format": {
+                        "semicolons": "insert",
+                        "trimTrailingWhitespace": true
+                    }
+                }
+            }
+        }
+    },
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 📂 FILE TYPES & EXCLUSIONS
+    // ──────────────────────────────────────────────────────────────────────────────
+    "file_types": {
+        "tailwindcss": [
+            "**/tailwind.css",
+            "**/tailwind/**"
+        ],
+        "php": [
+            "*.php"
+        ],
+        "pug": [
+            "*.pug",
+            "*.jade"
+        ]
+    },
+    "file_scan_exclusions": [
+        "**node_modules/**",
+        "build/**",
+        ".git/**",
+        ".venv/**",
+        "coverage/**",
+        "**dist",
+        "*.log",
+        "*.lock",
+        ".DS_Store",
+        "**package-lock.json",
+        "**.d.ts",
+        ".turbo"
+    ],
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 💻 TERMINAL
+    // ──────────────────────────────────────────────────────────────────────────────
+    "terminal": {
+        "scrollbar": {
+            "show": "never"
+        },
+        "toolbar": {
+            "breadcrumbs": false
+        },
+        "line_height": "comfortable"
+    },
+    "telemetry": {
+        "diagnostics": true,
+        "metrics": true
+    }
+}
