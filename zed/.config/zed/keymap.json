@@ -19,6 +19,15 @@
         },
     },
     {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-cmd-s": [
+                "workspace::SendKeystrokes",
+                "cmd-right ;"
+            ]
+        }
+    },
+    {
         "context": "Workspace",
         "bindings": {
             "alt-cmd-enter": "workspace::ToggleRightDock"
