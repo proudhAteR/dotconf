@@ -2,13 +2,12 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "Catppuccin Frappé (Blur)",
-    "icon_theme": "Catppuccin Latte",
+    "use_system_prompts": false,
+    "theme": "One Dark",
+    "icon_theme": "Material Icon Theme",
     "ui_font_family": "SF Mono",
-    "ui_font_size": 16.0,
     "ui_font_weight": 400.0,
     "buffer_font_family": "SF Mono",
-    "buffer_font_size": 15.0,
     "buffer_font_weight": 400.0,
     "buffer_line_height": "comfortable",
     "buffer_font_features": {
@@ -23,17 +22,16 @@
     },
     "tabs": {
         "file_icons": true,
-        "show_close_button": "hidden"
+        "show_close_button": "hidden",
+        "git_status": true
     },
-    "max_tabs": 3,
     "toolbar": {
-        "breadcrumbs": true,
+        "breadcrumbs": false,
         "quick_actions": false
     },
     "indent_guides": {
         "coloring": "fixed"
     },
-    "drop_target_size": 0.2,
     "zoomed_padding": true,
     "bottom_dock_layout": "contained",
     // ──────────────────────────────────────────────────────────────────────────────
@@ -125,7 +123,7 @@
     },
     "git_panel": {
         "tree_view": true,
-        "dock": "left"
+        "dock": "right"
     },
     "outline_panel": {
         "dock": "right"
