@@ -75,6 +75,7 @@ if status is-interactive
     abbr --add gaa "git add ."
     abbr --add gc "git commit -m"
     abbr --add gca "git commit -am"
+    abbr --add game "git commit --amend --no-edit"
     abbr --add gp "git push"
     abbr --add gf "git fetch"
     abbr --add gu "git fetch --prune && git pull --rebase"
