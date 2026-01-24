@@ -69,10 +69,11 @@
         "edit_prediction_provider": "none"
     },
     "agent": {
+        "default_profile": "ask",
         "always_allow_tool_actions": true,
         "default_model": {
             "provider": "google",
-            "model": "gemini-3-pro"
+            "model": "gemini-3-pro-preview"
         },
         "model_parameters": [],
         "enabled": true
