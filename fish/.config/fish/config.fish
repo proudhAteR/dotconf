@@ -108,7 +108,7 @@ if status is-interactive
     abbr --add ff "find . -type f | fzf"
     abbr --add keygen "openssl rand -base64"
     abbr --add z "zed"
-    alias econf="ghostty +edit-config"
+    alias conf="cd ~/dotconf && zed ."
 
     # Reload Config
     abbr --add reload "source ~/.config/fish/config.fish"

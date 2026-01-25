@@ -21,7 +21,7 @@
             },
             "variable.builtin": {
                 "font_style": "normal"
-            }, 
+            },
             "constant.builtin": {
                 "font_style": "normal"
             },
@@ -31,7 +31,6 @@
             "keyword": {
                 "font_style": "normal"
             },
-
             "type.builtin": {
                 "font_style": "normal"
             },
@@ -160,6 +159,10 @@
     },
     "zoomed_padding": true,
     "bottom_dock_layout": "contained",
+    "gutter": {
+        "min_line_number_digits": 0,
+        "folds": true
+    },
     // ──────────────────────────────────────────────────────────────────────────────
     // ✍️ EDITOR BEHAVIOR & UX
     // ──────────────────────────────────────────────────────────────────────────────
