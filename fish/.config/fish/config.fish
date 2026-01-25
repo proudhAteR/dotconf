@@ -37,7 +37,7 @@ if status is-interactive
     if type -q fastfetch
         fastfetch
     end
-    abbr --add fast fastfetch
+    abbr --add hyd fastfetch
 
     # ─── Abbreviations & Aliases ──────────────────────────────────────────────
 
@@ -81,6 +81,7 @@ if status is-interactive
     abbr --add gu "git fetch --prune && git pull --rebase"
     abbr --add gpl "git pull --rebase"
     abbr --add gd "git diff"
+    abbr --add gdel "git branch -d"
     abbr --add go "git checkout"
     abbr --add gb "git branch"
     abbr --add gm "git merge"

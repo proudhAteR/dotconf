@@ -53,7 +53,7 @@ background-opacity = 0.75
 background-blur-radius = 40
 
 font-size = 15
-font-family = SF Mono
+font-family = JetBrains Mono
 font-thicken = true
 font-feature = -dlig
 font-feature = -liga

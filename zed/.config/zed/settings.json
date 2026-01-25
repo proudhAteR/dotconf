@@ -2,16 +2,14 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
-    "use_system_prompts": true,
     "theme": "One Dark",
+    "use_system_prompts": true,
     "icon_theme": "Catppuccin Latte",
-    "ui_font_family": ".ZedMono",
+    "ui_font_family": "JetBrains Mono NL",
+    "buffer_font_family": "JetBrains Mono NL",
+    "buffer_font_size": 15,
     "buffer_font_features": {
-        "calt": 0,
-    },
-    "centered_layout": {
-        "left_padding": 0.15,
-        "right_padding": 0.15
+        "calt": 0, // Removes ligatures
     },
     "scrollbar": {
         "show": "never"
@@ -60,7 +58,7 @@
     "auto_signature_help": true,
     "lsp_document_colors": "inlay",
     "show_completions_on_input": true,
-    "snippet_sort_order": "top",
+    "snippet_sort_order": "bottom",
     "completions": {
         "words_min_length": 3,
         "lsp": true
@@ -69,6 +67,14 @@
         "edit_prediction_provider": "none"
     },
     "agent": {
+        "profiles": {
+            "discussion": {
+                "name": "Discussion",
+                "tools": {},
+                "enable_all_context_servers": false,
+                "context_servers": {}
+            }
+        },
         "default_profile": "ask",
         "always_allow_tool_actions": true,
         "default_model": {
@@ -116,7 +122,7 @@
         "auto_fold_dirs": false,
         "git_status": true,
         "hide_root": true,
-        "hide_gitignore": true,
+        "hide_gitignore": false,
         "indent_guides": {
             "show": "always"
         },
@@ -184,7 +190,7 @@
                 "!emmet",
                 "intelephense"
             ]
-        }
+        },
     },
     "lsp": {
         "tailwindcss-language-server": {
@@ -218,13 +224,19 @@
         "vtsls": {
             "settings": {
                 "typescript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always"
+                    },
                     "format": {
                         "semicolons": "insert",
                         "trimTrailingWhitespace": true,
-                        "trimTrailingCommas": true
+                        "trimTrailingCommas": true,
                     }
                 },
                 "javascript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always"
+                    },
                     "format": {
                         "semicolons": "insert",
                         "trimTrailingWhitespace": true
