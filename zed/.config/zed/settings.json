@@ -2,7 +2,7 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "Catppuccin Frappé (Blur)",
+    "theme": "Catppuccin Frappé (Blur) [Light]",
     "theme_overrides": {
         "Catppuccin Frappé (Blur)": {
             "tab.active_background": "#414559"
@@ -11,121 +11,121 @@
     "experimental.theme_overrides": {
         "syntax": {
             "variable.language": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "variable.language.this": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "variable.language.self": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "variable.builtin": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "constant.builtin": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "keyword.control": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "keyword": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "type.builtin": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "type.primitive": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "support.type": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "support.type.primitive": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "support.type.builtin": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "entity.name.type": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             // --- 3. CONSTANTS (undefined, null) ---
             "constant.language": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "constant.language.undefined": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "constant.language.null": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "constant.language.boolean": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "boolean": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "entity.name.function": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "variable.parameter": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "variable": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "comment": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "comment.doc": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "storage": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "storage.type": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "storage.modifier": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "markup.italic": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "markup.quote": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "function": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "type": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "property": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "attribute": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "string": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "constant": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "operator": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "variable.special": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "keyword.self": {
-                "font_style": "normal"
+                "font_style": "normal",
             },
             "hint": {
-                "font_style": "normal"
-            }
-        }
+                "font_style": "normal",
+            },
+        },
     },
     "use_system_prompts": true,
     "icon_theme": "Catppuccin Latte",
@@ -135,31 +135,31 @@
         "calt": 0, // Removes ligatures
     },
     "scrollbar": {
-        "show": "never"
+        "show": "never",
     },
     "tabs": {
         "file_icons": true,
         "show_close_button": "hidden",
         "git_status": true,
-        "activate_on_close": "left_neighbour"
+        "activate_on_close": "left_neighbour",
     },
     "toolbar": {
         "breadcrumbs": false,
-        "quick_actions": false
+        "quick_actions": false,
     },
     "indent_guides": {
-        "coloring": "fixed"
+        "coloring": "fixed",
     },
     "file_finder": {
         "git_status": true,
         "modal_max_width": "small",
-        "include_ignored": "all"
+        "include_ignored": "all",
     },
     "zoomed_padding": true,
     "bottom_dock_layout": "contained",
     "gutter": {
         "min_line_number_digits": 0,
-        "folds": true
+        "folds": true,
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // ✍️ EDITOR BEHAVIOR & UX
@@ -176,8 +176,8 @@
     "confirm_quit": false,
     "autosave": {
         "after_delay": {
-            "milliseconds": 750
-        }
+            "milliseconds": 750,
+        },
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 🧠 INTELLISENSE & AI
@@ -189,10 +189,10 @@
     "snippet_sort_order": "bottom",
     "completions": {
         "words_min_length": 3,
-        "lsp": true
+        "lsp": true,
     },
     "features": {
-        "edit_prediction_provider": "none"
+        "edit_prediction_provider": "none",
     },
     "agent": {
         "profiles": {
@@ -200,17 +200,17 @@
                 "name": "Discussion",
                 "tools": {},
                 "enable_all_context_servers": false,
-                "context_servers": {}
-            }
+                "context_servers": {},
+            },
         },
         "default_profile": "write",
         "always_allow_tool_actions": true,
         "default_model": {
             "provider": "google",
-            "model": "gemini-3-pro-preview"
+            "model": "gemini-3-pro-preview",
         },
         "model_parameters": [],
-        "enabled": true
+        "enabled": true,
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 🧰 FORMATTING & CODING STANDARDS
@@ -223,15 +223,15 @@
     "ensure_final_newline_on_save": true,
     "code_actions_on_format": {
         "source.organizeImports": true,
-        "source.fixAll.esLint": true
+        "source.fixAll.esLint": true,
     },
     "prettier": {
-        "allowed": false
+        "allowed": false,
     },
     "inlay_hints": {
         "show_background": false,
         "enabled": true,
-        "show_type_hints": true
+        "show_type_hints": true,
     },
     "soft_wrap": "preferred_line_length",
     "preferred_line_length": 120,
@@ -252,35 +252,35 @@
         "hide_root": true,
         "hide_gitignore": false,
         "indent_guides": {
-            "show": "always"
+            "show": "always",
         },
         "entry_spacing": "comfortable",
     },
     "git_panel": {
         "tree_view": true,
-        "dock": "right"
+        "dock": "right",
     },
     "outline_panel": {
-        "dock": "right"
+        "dock": "right",
     },
     "collaboration_panel": {
-        "dock": "right"
+        "dock": "right",
     },
     "notification_panel": {
-        "dock": "right"
+        "dock": "right",
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 🌿 GIT SETTINGS
     // ──────────────────────────────────────────────────────────────────────────────
     "git": {
         "blame": {
-            "show_avatar": true
+            "show_avatar": true,
         },
         "git_gutter": "tracked_files",
         "inline_blame": {
             "enabled": true,
-            "show_commit_summary": false
-        }
+            "show_commit_summary": false,
+        },
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 🧩 LANGUAGE SPECIFIC & LSP
@@ -290,8 +290,8 @@
             "language_servers": [
                 "tailwindcss-intellisense-css",
                 "!vscode-css-language-server",
-                "..."
-            ]
+                "...",
+            ],
         },
         "Swift": {
             "enable_language_server": true,
@@ -299,7 +299,7 @@
                 "sourcekit-lsp"
             ],
             "formatter": "language_server",
-            "format_on_save": "on"
+            "format_on_save": "on",
         },
         "PHP": {
             "language_servers": [
@@ -307,17 +307,17 @@
                 "!phpactor",
                 "!phptools",
                 "!emmet",
-                "..."
+                "...",
             ],
             "format_on_save": "on",
-            "formatter": "language_server"
+            "formatter": "language_server",
         },
         "Latte": {
             "language_servers": [
                 "tailwindcss-language-server",
                 "!emmet",
-                "intelephense"
-            ]
+                "intelephense",
+            ],
         },
     },
     "lsp": {
@@ -333,44 +333,44 @@
                         // Matches: class => "..." or class: "..." (Latte params/arrays)
                         "(?:class|className)\\s*(?:=>|:)\\s*[\"']([^\"']*)[\"']",
                         // Matches: $class = "..." or $myClass = "..." (Latte variables)
-                        "\\$[a-zA-Z]*[Cc]lass(?:Name)?\\s*=\\s*[\"']([^\"']*)[\"']"
-                    ]
+                        "\\$[a-zA-Z]*[Cc]lass(?:Name)?\\s*=\\s*[\"']([^\"']*)[\"']",
+                    ],
                 },
                 "emmetCompletions": true,
                 "includeLanguages": {
                     "latte": "html",
-                    "pug": "html"
+                    "pug": "html",
                 },
-                "hovers": true
-            }
+                "hovers": true,
+            },
         },
         "sourcekit-lsp": {
             "binary": {
-                "path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp"
-            }
+                "path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp",
+            },
         },
         "vtsls": {
             "settings": {
                 "typescript": {
                     "updateImportsOnFileMove": {
-                        "enabled": "always"
+                        "enabled": "always",
                     },
                     "format": {
                         "semicolons": "insert",
                         "trimTrailingWhitespace": true,
                         "trimTrailingCommas": true,
-                    }
+                    },
                 },
                 "javascript": {
                     "updateImportsOnFileMove": {
-                        "enabled": "always"
+                        "enabled": "always",
                     },
                     "format": {
                         "semicolons": "insert",
-                        "trimTrailingWhitespace": true
-                    }
-                }
-            }
+                        "trimTrailingWhitespace": true,
+                    },
+                },
+            },
         },
         "yaml-language-server": {
             "settings": {
@@ -379,10 +379,10 @@
                         "!env scalar",
                         "!env sequence",
                         "!env mapping"
-                    ]
-                }
-            }
-        }
+                    ],
+                },
+            },
+        },
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 📂 FILE TYPES & EXCLUSIONS
@@ -401,7 +401,7 @@
         ],
         "latte": [
             "*.latte"
-        ]
+        ],
     },
     "file_scan_exclusions": [
         "**node_modules/**",
@@ -415,17 +415,17 @@
         ".DS_Store",
         "**package-lock.json",
         "**.d.ts",
-        ".turbo"
+        ".turbo",
     ],
     // ──────────────────────────────────────────────────────────────────────────────
     // 💻 TERMINAL
     // ──────────────────────────────────────────────────────────────────────────────
     "terminal": {
         "scrollbar": {
-            "show": "never"
+            "show": "never",
         },
         "toolbar": {
-            "breadcrumbs": false
+            "breadcrumbs": false,
         },
         "alternate_scroll": "on",
         "blinking": "on",
@@ -439,8 +439,8 @@
                     ".venv",
                     "venv"
                 ],
-                "activate_script": "default"
-            }
+                "activate_script": "default",
+            },
         },
         "env": {},
         "font_family": null,
@@ -452,6 +452,6 @@
     },
     "telemetry": {
         "diagnostics": false,
-        "metrics": false
-    }
+        "metrics": false,
+    },
 }

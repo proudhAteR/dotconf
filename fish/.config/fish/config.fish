@@ -37,7 +37,7 @@ if status is-interactive
     if type -q fastfetch
         fastfetch
     end
-    abbr --add lch fastfetch
+    abbr --add fast fastfetch
 
     #Starfish
     starship init fish | source

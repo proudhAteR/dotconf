@@ -22,6 +22,9 @@
         }
     },
     "logo": {
-        "source": "NetHydra"
+        "source": "NetHydra",
+        "color": {
+            "1": "red"
+        }
     }
 }
