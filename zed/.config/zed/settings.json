@@ -129,10 +129,8 @@
     },
     "use_system_prompts": true,
     "icon_theme": "Catppuccin Latte",
-    "ui_font_family": "JetBrains Mono NL",
-    "buffer_font_family": "JetBrains Mono NL",
-    "ui_font_size": 15,
-    "buffer_font_size": 15,
+    "ui_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_family": "JetBrainsMono Nerd Font",
     "buffer_font_features": {
         "calt": 0, // Removes ligatures
     },
@@ -429,11 +427,28 @@
         "toolbar": {
             "breadcrumbs": false
         },
-        "line_height": "comfortable",
-        "env": {
-            "TERM": "xterm-256color"
-        },
+        "alternate_scroll": "on",
+        "blinking": "on",
         "copy_on_select": true,
+        "keep_selection_on_copy": true,
+        "detect_venv": {
+            "on": {
+                "directories": [
+                    ".env",
+                    "env",
+                    ".venv",
+                    "venv"
+                ],
+                "activate_script": "default"
+            }
+        },
+        "env": {},
+        "font_family": null,
+        "font_features": null,
+        "font_size": null,
+        "option_as_meta": false,
+        "button": false,
+        "working_directory": "current_project_directory",
     },
     "telemetry": {
         "diagnostics": false,

@@ -62,6 +62,7 @@ cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
 mouse-hide-while-typing = true
+copy-on-select = true
 
 auto-update = download
 auto-update-channel = stable

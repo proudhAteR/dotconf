@@ -37,10 +37,15 @@ if status is-interactive
     if type -q fastfetch
         fastfetch
     end
-    abbr --add hyd fastfetch
+    abbr --add lch fastfetch
+
+    #Starfish
+    starship init fish | source
 
     # ─── Abbreviations & Aliases ──────────────────────────────────────────────
-
+    # To remove abbr run "abbr --erase <abbr>"
+    # To list abbrs run "abbr --list"
+    #
     # Navigation
     abbr --add .. "cd .."
     abbr --add ... "cd ../.."
@@ -78,15 +83,15 @@ if status is-interactive
     abbr --add game "git commit --amend --no-edit"
     abbr --add gp "git push"
     abbr --add gf "git fetch"
-    abbr --add gu "git fetch --prune && git pull --rebase"
-    abbr --add gpl "git pull --rebase"
+    abbr --add gu "git fetch --prune && git pull --rebase" #update project
+    abbr --add gr "git pull --rebase" #rebase
     abbr --add gd "git diff"
-    abbr --add gdel "git branch -d"
-    abbr --add go "git checkout"
+    abbr --add grm "git branch -d" #rm branch
+    abbr --add go "git checkout" #go to branch
     abbr --add gb "git branch"
     abbr --add gm "git merge"
-    abbr --add gst "git stash"
-    abbr --add gsp "git stash pop"
+    abbr --add gt "git stash" #tmp
+    abbr --add gta "git stash pop -q"
 
     # Docker
     abbr --add d "docker"
@@ -96,7 +101,6 @@ if status is-interactive
 
     # Fly.io
     if type -q fly
-        abbr --add f "fly"
         abbr --add fdeploy "fly deploy"
         abbr --add fstatus "fly status"
         abbr --add flogs "fly logs"
@@ -104,12 +108,11 @@ if status is-interactive
     end
 
     # Utils
-    abbr --add cl "clear"
-    abbr --add ff "find . -type f | fzf"
-    abbr --add keygen "openssl rand -base64"
+    abbr --add clr "clear"
+    abbr --add keygen "openssl rand -base64" # do not forget to specify the length as arg
     abbr --add z "zed"
     alias conf="cd ~/dotconf && zed ."
 
     # Reload Config
-    abbr --add reload "source ~/.config/fish/config.fish"
+    abbr --add rld "source ~/.config/fish/config.fish"
 end
