@@ -2,11 +2,11 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "One Dark",
+    "theme": "Catppuccin Frappé (Blur) [Heavy]",
     "use_system_prompts": true,
     "icon_theme": "Catppuccin Latte",
-    "ui_font_family": "JetBrains Mono NL",
-    "buffer_font_family": "JetBrains Mono NL",
+    "ui_font_family": "SF Mono",
+    "buffer_font_family": "SF Mono",
     "buffer_font_size": 15,
     "buffer_font_features": {
         "calt": 0, // Removes ligatures
@@ -17,7 +17,8 @@
     "tabs": {
         "file_icons": true,
         "show_close_button": "hidden",
-        "git_status": true
+        "git_status": true,
+        "activate_on_close":"left_neighbour"
     },
     "toolbar": {
         "breadcrumbs": false,
@@ -28,7 +29,7 @@
     },
     "file_finder": {
         "git_status": true,
-        "modal_max_width": "medium",
+        "modal_max_width": "small",
         "include_ignored": "all"
     },
     "zoomed_padding": true,

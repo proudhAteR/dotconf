@@ -1,3 +1,6 @@
 **/gh/hosts.yml
 **/zed/conversations
 **/zed/prompts
+**/.gemini/*
+!**/.gemini/themes
+!**/.gemini/settings.example.json
