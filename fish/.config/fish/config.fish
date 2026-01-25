@@ -92,6 +92,7 @@ if status is-interactive
     abbr --add gm "git merge"
     abbr --add gt "git stash" #tmp
     abbr --add gta "git stash pop -q"
+    abbr --add gres "git reset --hard HEAD"
 
     # Docker
     abbr --add d "docker"
