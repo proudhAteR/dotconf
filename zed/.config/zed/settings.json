@@ -10,16 +10,75 @@
     },
     "experimental.theme_overrides": {
         "syntax": {
-            "comment": {
+            "variable.language": {
                 "font_style": "normal"
             },
-            "comment.doc": {
+            "variable.language.this": {
+                "font_style": "normal"
+            },
+            "variable.language.self": {
+                "font_style": "normal"
+            },
+            "variable.builtin": {
+                "font_style": "normal"
+            }, 
+            "constant.builtin": {
+                "font_style": "normal"
+            },
+            "keyword.control": {
                 "font_style": "normal"
             },
             "keyword": {
                 "font_style": "normal"
             },
-            "keyword.control": {
+
+            "type.builtin": {
+                "font_style": "normal"
+            },
+            "type.primitive": {
+                "font_style": "normal"
+            },
+            "support.type": {
+                "font_style": "normal"
+            },
+            "support.type.primitive": {
+                "font_style": "normal"
+            },
+            "support.type.builtin": {
+                "font_style": "normal"
+            },
+            "entity.name.type": {
+                "font_style": "normal"
+            },
+            // --- 3. CONSTANTS (undefined, null) ---
+            "constant.language": {
+                "font_style": "normal"
+            },
+            "constant.language.undefined": {
+                "font_style": "normal"
+            },
+            "constant.language.null": {
+                "font_style": "normal"
+            },
+            "constant.language.boolean": {
+                "font_style": "normal"
+            },
+            "boolean": {
+                "font_style": "normal"
+            },
+            "entity.name.function": {
+                "font_style": "normal"
+            },
+            "variable.parameter": {
+                "font_style": "normal"
+            },
+            "variable": {
+                "font_style": "normal"
+            },
+            "comment": {
+                "font_style": "normal"
+            },
+            "comment.doc": {
                 "font_style": "normal"
             },
             "storage": {
@@ -31,46 +90,40 @@
             "storage.modifier": {
                 "font_style": "normal"
             },
-            "type": {
-                "font_style": "normal"
-            },
-            "variable.parameter": {
-                "font_style": "normal"
-            },
-            "variable.language": {
-                "font_style": "normal"
-            },
-            "variable.language.this": {
-                "font_style": "normal"
-            },
-            "variable.language.self": {
-                "font_style": "normal"
-            },
-            "entity.name.function": {
-                "font_style": "normal"
-            },
-            "entity.name.type": {
-                "font_style": "normal"
-            },
-            "entity.other.attribute-name": {
-                "font_style": "normal"
-            },
-            "entity.other.inherited-class": {
-                "font_style": "normal"
-            },
             "markup.italic": {
                 "font_style": "normal"
             },
             "markup.quote": {
                 "font_style": "normal"
             },
+            "function": {
+                "font_style": "normal"
+            },
+            "type": {
+                "font_style": "normal"
+            },
+            "property": {
+                "font_style": "normal"
+            },
+            "attribute": {
+                "font_style": "normal"
+            },
+            "string": {
+                "font_style": "normal"
+            },
+            "constant": {
+                "font_style": "normal"
+            },
+            "operator": {
+                "font_style": "normal"
+            },
+            "variable.special": {
+                "font_style": "normal"
+            },
+            "keyword.self": {
+                "font_style": "normal"
+            },
             "hint": {
-                "font_style": "normal"
-            },
-            "inlay_hint": {
-                "font_style": "normal"
-            },
-            "constant.language": {
                 "font_style": "normal"
             }
         }
