@@ -53,11 +53,11 @@ if type -q git; and git rev-parse --is-inside-work-tree >/dev/null 2>&1
         # Determine sync status
         set -l sync_status ""
         if test "$ahead" -gt 0; and test "$behind" -gt 0
-            set sync_status (superscript "$ahead")"/"(superscript "$behind")
+            set sync_status "⇡"(superscript "$ahead")"⇣"(superscript "$behind")
         else if test "$ahead" -gt 0
-            set sync_status (superscript "$ahead")
+            set sync_status "⇡"(superscript "$ahead")
         else if test "$behind" -gt 0
-            set sync_status (superscript "$behind")
+            set sync_status "⇣"(superscript "$behind")
         end
 
         # Output
