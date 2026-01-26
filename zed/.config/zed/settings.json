@@ -129,8 +129,8 @@
     },
     "use_system_prompts": true,
     "icon_theme": "Catppuccin Latte",
-    "ui_font_family": "JetBrainsMono Nerd Font",
-    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "ui_font_family": "SF Mono",
+    "buffer_font_family": "SF Mono",
     "buffer_font_features": {
         "calt": 0, // Removes ligatures
     },
@@ -443,7 +443,7 @@
             },
         },
         "env": {},
-        "font_family": null,
+        "font_family": "Liga SFMono Nerd Font",
         "font_features": null,
         "font_size": null,
         "option_as_meta": false,
