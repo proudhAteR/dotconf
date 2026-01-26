@@ -28,9 +28,10 @@ $line_break\
 $character"""
 
 palette = 'catppuccin_frappe'
+command_timeout = 2000
 
 [custom.git]
-command = "fish ~/.config/git_prompt.fish"
+command = "fish --no-config ~/.config/git_prompt.fish"
 when = "git rev-parse --is-inside-work-tree 2> /dev/null"
 style = "bg:yellow"
 format = '[[  $output ](fg:crust bg:yellow)]($style)'

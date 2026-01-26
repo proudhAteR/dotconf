@@ -21,46 +21,49 @@ function superscript
 end
 
 if type -q git; and git rev-parse --is-inside-work-tree >/dev/null 2>&1
-    set -l branch (git symbolic-ref --quiet --short HEAD 2>/dev/null)
+    set -l git_out (git status --porcelain=v2 --branch --ignore-submodules=dirty 2>/dev/null)
+    set -l branch ""
+    set -l commit ""
+    set -l ahead 0
+    set -l behind 0
+    set -l dirty 0
 
-    # Dirty Check (Uncommitted changes)
-    set -l dirty (git status --porcelain --ignore-submodules=dirty 2>/dev/null)
-    if test -n "$dirty"
-        set branch "$branch*"
+    for line in $git_out
+        set -l parts (string split " " -- $line)
+        switch $parts[2]
+            case "branch.head"
+                set branch (string join " " $parts[3..-1])
+            case "branch.oid"
+                set commit (string sub -l 7 $parts[3])
+            case "branch.ab"
+                set ahead (string trim -c "+" -- $parts[3])
+                set behind (string trim -c "-" -- $parts[4])
+        end
+        
+        # Check for dirty (lines not starting with #)
+        if not string match -q "#*" -- $line
+            set dirty 1
+        end
     end
 
-    if test -z "$branch"
-        # Detached HEAD
-        set -l commit (git rev-parse --short HEAD 2>/dev/null)
+    if test "$branch" = "(detached)"
         if test -n "$commit"
             echo -n "detached@"(superscript "$commit")
         end
     else
-        # Ahead / Behind / Sync Check
-        set -l upstream (git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null)
-        set -l ahead 0
-        set -l behind 0
-
-        if test -n "$upstream"
-            set ahead (git rev-list --count @{u}..HEAD 2>/dev/null)
-            set behind (git rev-list --count HEAD..@{u} 2>/dev/null)
+        if test "$dirty" -eq 1
+             set branch "$branch*"
         end
-
-        # Force numeric safety
-        set ahead (math "$ahead + 0")
-        set behind (math "$behind + 0")
-
-        # Determine sync status
+        
         set -l sync_status ""
         if test "$ahead" -gt 0; and test "$behind" -gt 0
             set sync_status "⇡"(superscript "$ahead")"⇣"(superscript "$behind")
         else if test "$ahead" -gt 0
-            set sync_status "⇡"(superscript "$ahead")
+             set sync_status "⇡"(superscript "$ahead")
         else if test "$behind" -gt 0
-            set sync_status "⇣"(superscript "$behind")
+             set sync_status "⇣"(superscript "$behind")
         end
-
-        # Output
+        
         echo -n "$branch$sync_status"
     end
 end

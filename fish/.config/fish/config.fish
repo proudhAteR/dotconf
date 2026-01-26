@@ -92,6 +92,7 @@ if status is-interactive
     abbr --add gs "git stash"
     abbr --add gsp "git stash pop -q"
     abbr --add gres "git reset --hard HEAD"
+    abbr --add gi "git status -s"
 
     # Docker
     abbr --add d "docker"
