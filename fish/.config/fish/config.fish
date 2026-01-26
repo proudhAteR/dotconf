@@ -75,7 +75,6 @@ if status is-interactive
 
     # Git (The Essentials)
     abbr --add g "git"
-    abbr --add gs "git status -s"
     abbr --add ga "git add"
     abbr --add gaa "git add ."
     abbr --add gc "git commit -m"
@@ -90,8 +89,8 @@ if status is-interactive
     abbr --add go "git checkout" #go to branch
     abbr --add gb "git branch"
     abbr --add gm "git merge"
-    abbr --add gt "git stash" #tmp
-    abbr --add gta "git stash pop -q"
+    abbr --add gs "git stash"
+    abbr --add gsp "git stash pop -q"
     abbr --add gres "git reset --hard HEAD"
 
     # Docker
@@ -113,6 +112,8 @@ if status is-interactive
     abbr --add keygen "openssl rand -base64" # do not forget to specify the length as arg
     abbr --add z "zed"
     alias conf="cd ~/dotconf && zed ."
+    abbr --add ffcmd "cat ~/dotconf/fish/.config/fish/fzf.txt"
+    abbr --add ffmore "fzf_configure_bindings --help"
 
     # Reload Config
     abbr --add rld "source ~/.config/fish/config.fish"
