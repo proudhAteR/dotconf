@@ -17,7 +17,6 @@ $php\
 $java\
 $kotlin\
 $haskell\
-$python\
 [](fg:green bg:sapphire)\
 $conda\
 [](fg:sapphire bg:lavender)\
@@ -31,6 +30,7 @@ palette = 'catppuccin_frappe'
 command_timeout = 2000
 
 [custom.git]
+disabled= false
 command = "fish --no-config ~/.config/git_prompt.fish"
 when = "git rev-parse --is-inside-work-tree 2> /dev/null"
 style = "bg:yellow"
@@ -138,7 +138,7 @@ format = '[$symbol$environment ]($style)'
 ignore_base = false
 
 [time]
-disabled = false
+disabled = true
 time_format = "%R"
 style = "bg:lavender"
 format = '[[  $time ](fg:crust bg:lavender)]($style)'
