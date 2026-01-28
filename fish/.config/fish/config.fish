@@ -5,6 +5,7 @@ set -g fish_greeting
 # Editor setup
 if type -q zed
     set -gx EDITOR "zed --wait"
+    set -gx VISUAL "zed --wait"
 end
 
 # ─── Path & Integrations ──────────────────────────────────────────────────────
@@ -98,6 +99,7 @@ if status is-interactive
     abbr --add d "docker"
     abbr --add dc "docker compose"
     abbr --add dup "docker compose up"
+    abbr --add dupd "docker compose up -d"
     abbr --add dwn "docker compose down"
 
     # Fly.io
@@ -109,7 +111,7 @@ if status is-interactive
     end
 
     # Utils
-    abbr --add mbrew "arch -arm64 brew" # Ghostty is not in the arm arch so I need to specify to brew what arch we are on
+    abbr --add pm "arch -arm64 brew" # Ghostty is not in the arm arch so I need to specify to brew what arch we are on
     abbr --add clr "clear"
     abbr --add keygen "openssl rand -base64" # do not forget to specify the length as arg
     abbr --add z "zed"

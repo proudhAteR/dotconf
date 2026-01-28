@@ -129,8 +129,8 @@
     },
     "use_system_prompts": true,
     "icon_theme": "Catppuccin Latte",
-    "ui_font_family": "SF Mono",
-    "buffer_font_family": "SF Mono",
+    "ui_font_family": "JetBrains Mono",
+    "buffer_font_family": "JetBrains Mono",
     "buffer_font_features": {
         "calt": 0, // Removes ligatures
     },
@@ -443,9 +443,10 @@
             },
         },
         "env": {},
-        "font_family": "Liga SFMono Nerd Font",
-        "font_features": null,
-        "font_size": null,
+        "font_family": "JetBrainsMono Nerd Font Mono",
+        "font_features": {
+            "calt": false
+        },
         "option_as_meta": false,
         "button": false,
         "working_directory": "current_project_directory",
