@@ -44,5 +44,11 @@
         "bindings": {
             "alt-enter": "editor::ToggleCodeActions"
         }
+    },
+    {
+        "context": "!ContextEditor > (Editor && mode == full)",
+        "bindings": {
+            "cmd-:": "editor::ToggleInlayHints"
+        }
     }
 ]
