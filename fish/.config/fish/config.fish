@@ -82,7 +82,7 @@ if status is-interactive
     abbr --add gca "git commit -am"
     abbr --add game "git commit --amend --no-edit"
     abbr --add gp "git push"
-    abbr --add gf "git fetch"
+    abbr --add gf "git fetch --prune"
     abbr --add gu "git fetch --prune && git pull --rebase" #update project
     abbr --add gr "git pull --rebase" #rebase
     abbr --add gd "git diff"
