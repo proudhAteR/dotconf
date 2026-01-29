@@ -114,8 +114,8 @@ if status is-interactive
     abbr --add pm "arch -arm64 brew" # Ghostty is not in the arm arch so I need to specify to brew what arch we are on
     abbr --add clr "clear"
     abbr --add keygen "openssl rand -base64" # do not forget to specify the length as arg
-    abbr --add z "zed"
-    alias conf="cd ~/dotconf && zed ."
+    abbr --add z "zed ."
+    alias conf="zed ~/dotconf"
     abbr --add ffcmd "cat ~/dotconf/fish/.config/fish/fzf.txt"
     abbr --add ffmore "fzf_configure_bindings --help"
 
