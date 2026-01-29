@@ -2,9 +2,9 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "Catppuccin Frappé (Blur) [Light]",
+    "theme": "Catppuccin Frappé (Blur) [Heavy]",
     "theme_overrides": {
-        "Catppuccin Frappé (Blur)": {
+        "Catppuccin Frappé (Blur) [Heavy]": {
             "tab.active_background": "#414559"
         }
     },
@@ -129,8 +129,8 @@
     },
     "use_system_prompts": true,
     "icon_theme": "Catppuccin Latte",
-    "ui_font_family": "JetBrains Mono",
-    "buffer_font_family": "JetBrains Mono",
+    "ui_font_family": "Lilex Nerd Font Mono",
+    "buffer_font_family": "Lilex Nerd Font Mono",
     "buffer_font_features": {
         "calt": 0, // Removes ligatures
     },
@@ -240,7 +240,7 @@
     "auto_indent": true,
     "auto_indent_on_paste": true,
     "always_treat_brackets_as_autoclosed": true,
-    "colorize_brackets": false,
+    "colorize_brackets": true,
     "expand_excerpt_lines": 6,
     // ──────────────────────────────────────────────────────────────────────────────
     // 🌲 PANEL CONFIGURATIONS
@@ -443,7 +443,8 @@
             },
         },
         "env": {},
-        "font_family": "JetBrainsMono Nerd Font Mono",
+        "font_family": "Lilex Nerd Font Mono",
+        "font_size": 15,
         "font_features": {
             "calt": false
         },
