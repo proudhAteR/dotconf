@@ -1,0 +1,6 @@
+ABBR    | COMMAND
+d       | docker
+dc      | docker compose
+dup     | docker compose up
+dupd    | docker compose up -d
+dwn     | docker compose down

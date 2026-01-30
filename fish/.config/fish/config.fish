@@ -58,7 +58,7 @@ if status is-interactive
     alias cp="cp -i"
     alias rm="rm -i"
 
-    # Modern 'ls' replacement: 'eza' (if installed), otherwise standard 'ls'
+    # Modern 'ls' replacement: 'eza', otherwise standard 'ls'
     if type -q eza
         alias ls="eza --icons --group-directories-first"
         alias ll="eza -l --icons --group-directories-first --git"
@@ -69,7 +69,7 @@ if status is-interactive
         alias la="ls -la"
     end
 
-    # Modern 'cat' replacement: 'bat' (if installed)
+    # Modern 'cat' replacement
     if type -q bat
         alias cat="bat"
     end
@@ -94,6 +94,7 @@ if status is-interactive
     abbr --add gsp "git stash pop -q"
     abbr --add gres "git reset --hard HEAD"
     abbr --add gi "git status -s"
+    abbr --add ghis "git log --oneline --graph --decorate --all" #git history
 
     # Docker
     abbr --add d "docker"
@@ -114,9 +115,14 @@ if status is-interactive
     abbr --add pm "arch -arm64 brew" # Ghostty is not in the arm arch so I need to specify to brew what arch we are on
     abbr --add clr "clear"
     abbr --add keygen "openssl rand -base64" # do not forget to specify the length as arg
-    abbr --add z "zed ."
+    abbr --add z "zed"
+    abbr --add zh "zed ." #zed here
     alias conf="zed ~/dotconf"
     abbr --add ffcmd "cat ~/dotconf/fish/.config/fish/fzf.txt"
+    abbr --add gcmd "cat ~/dotconf/fish/.config/fish/git.txt"
+    abbr --add flycmd "cat ~/dotconf/fish/.config/fish/fly.txt"
+    abbr --add dcmd "cat ~/dotconf/fish/.config/fish/docker.txt"
+    abbr --add ucmd "cat ~/dotconf/fish/.config/fish/utils.txt"
     abbr --add ffmore "fzf_configure_bindings --help"
 
     # Reload Config

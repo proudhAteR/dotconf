@@ -1,0 +1,5 @@
+ABBR      | COMMAND
+fdeploy   | fly deploy
+fstatus   | fly status
+flogs     | fly logs
+fssh      | fly ssh console

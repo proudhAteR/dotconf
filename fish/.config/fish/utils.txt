@@ -1,0 +1,8 @@
+ABBR    | COMMAND
+pm      | arch -arm64 brew
+clr     | clear
+keygen  | openssl rand -base64
+z       | zed
+zh      | zed .
+conf    | zed ~/dotconf
+rld     | source ~/.config/fish/config.fish

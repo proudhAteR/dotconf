@@ -1,0 +1,21 @@
+ABBR    | COMMAND
+g       | git
+ga      | git add
+gaa     | git add .
+gc      | git commit -m
+gca     | git commit -am
+game    | git commit --amend --no-edit
+gp      | git push
+gf      | git fetch --prune
+gu      | git fetch --prune && git pull --rebase
+gr      | git pull --rebase
+gd      | git diff
+grm     | git branch -d
+go      | git checkout
+gb      | git branch
+gm      | git merge
+gs      | git stash
+gsp     | git stash pop -q
+gres    | git reset --hard HEAD
+gi      | git status -s
+ghis    | git log --oneline --graph --all
