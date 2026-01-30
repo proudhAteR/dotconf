@@ -118,11 +118,13 @@ if status is-interactive
     abbr --add z "zed"
     abbr --add zh "zed ." #zed here
     alias conf="zed ~/dotconf"
-    abbr --add ffcmd "cat ~/dotconf/fish/.config/fish/fzf.txt"
-    abbr --add gcmd "cat ~/dotconf/fish/.config/fish/git.txt"
-    abbr --add flycmd "cat ~/dotconf/fish/.config/fish/fly.txt"
-    abbr --add dcmd "cat ~/dotconf/fish/.config/fish/docker.txt"
-    abbr --add ucmd "cat ~/dotconf/fish/.config/fish/utils.txt"
+    
+    #docs
+    abbr --add ffdoc "cat ~/dotconf/fish/.config/fish/fzf.txt"
+    abbr --add gdoc "cat ~/dotconf/fish/.config/fish/git.txt"
+    abbr --add fdoc "cat ~/dotconf/fish/.config/fish/fly.txt"
+    abbr --add ddoc "cat ~/dotconf/fish/.config/fish/docker.txt"
+    abbr --add udoc "cat ~/dotconf/fish/.config/fish/utils.txt"
     abbr --add ffmore "fzf_configure_bindings --help"
 
     # Reload Config
