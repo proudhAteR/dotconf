@@ -99,8 +99,7 @@ if status is-interactive
     # Docker
     abbr --add d "lazydocker"
     abbr --add dc "docker compose"
-    abbr --add dup "docker compose up"
-    abbr --add dupd "docker compose up -d"
+    abbr --add dup "docker compose up -d && lazydocker"
     abbr --add dwn "docker compose down"
 
     # Fly.io
