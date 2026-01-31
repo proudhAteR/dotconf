@@ -50,5 +50,10 @@
         "bindings": {
             "cmd-:": "editor::ToggleInlayHints"
         }
+    },
+    {
+        "bindings": {
+            "ctrl-f": "project_panel::FoldDirectory"
+        }
     }
 ]

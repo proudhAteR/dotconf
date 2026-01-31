@@ -97,7 +97,7 @@ if status is-interactive
     abbr --add ghis "git log --oneline --graph --decorate --all" #git history
 
     # Docker
-    abbr --add d "docker"
+    abbr --add d "lazydocker"
     abbr --add dc "docker compose"
     abbr --add dup "docker compose up"
     abbr --add dupd "docker compose up -d"
