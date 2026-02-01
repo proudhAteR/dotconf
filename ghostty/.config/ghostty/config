@@ -67,3 +67,6 @@ copy-on-select = true
 auto-update = download
 auto-update-channel = stable
 macos-titlebar-style = tabs
+fullscreen = true
+window-decoration = auto
+maximize = true
