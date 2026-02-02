@@ -2,138 +2,11 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "One Dark",
-    "theme_overrides": {
-        "Catppuccin Frappé (Blur) [Heavy]": {
-            "tab.active_background": "#414559"
-        },
-        "Catppuccin Frappé (Blur)": {
-            "tab.active_background": "#414559"
-        }
-    },
-    "experimental.theme_overrides": {
-        "syntax": {
-            "variable.language": {
-                "font_style": "normal",
-            },
-            "variable.language.this": {
-                "font_style": "normal",
-            },
-            "variable.language.self": {
-                "font_style": "normal",
-            },
-            "variable.builtin": {
-                "font_style": "normal",
-            },
-            "constant.builtin": {
-                "font_style": "normal",
-            },
-            "keyword.control": {
-                "font_style": "normal",
-            },
-            "keyword": {
-                "font_style": "normal",
-            },
-            "type.builtin": {
-                "font_style": "normal",
-            },
-            "type.primitive": {
-                "font_style": "normal",
-            },
-            "support.type": {
-                "font_style": "normal",
-            },
-            "support.type.primitive": {
-                "font_style": "normal",
-            },
-            "support.type.builtin": {
-                "font_style": "normal",
-            },
-            "entity.name.type": {
-                "font_style": "normal",
-            },
-            // --- 3. CONSTANTS (undefined, null) ---
-            "constant.language": {
-                "font_style": "normal",
-            },
-            "constant.language.undefined": {
-                "font_style": "normal",
-            },
-            "constant.language.null": {
-                "font_style": "normal",
-            },
-            "constant.language.boolean": {
-                "font_style": "normal",
-            },
-            "boolean": {
-                "font_style": "normal",
-            },
-            "entity.name.function": {
-                "font_style": "normal",
-            },
-            "variable.parameter": {
-                "font_style": "normal",
-            },
-            "variable": {
-                "font_style": "normal",
-            },
-            "comment": {
-                "font_style": "normal",
-            },
-            "comment.doc": {
-                "font_style": "normal",
-            },
-            "storage": {
-                "font_style": "normal",
-            },
-            "storage.type": {
-                "font_style": "normal",
-            },
-            "storage.modifier": {
-                "font_style": "normal",
-            },
-            "markup.italic": {
-                "font_style": "normal",
-            },
-            "markup.quote": {
-                "font_style": "normal",
-            },
-            "function": {
-                "font_style": "normal",
-            },
-            "type": {
-                "font_style": "normal",
-            },
-            "property": {
-                "font_style": "normal",
-            },
-            "attribute": {
-                "font_style": "normal",
-            },
-            "string": {
-                "font_style": "normal",
-            },
-            "constant": {
-                "font_style": "normal",
-            },
-            "operator": {
-                "font_style": "normal",
-            },
-            "variable.special": {
-                "font_style": "normal",
-            },
-            "keyword.self": {
-                "font_style": "normal",
-            },
-            "hint": {
-                "font_style": "normal",
-            },
-        },
-    },
+    "theme": "Catppuccin Macchiato (Blur) [Heavy]",
     "use_system_prompts": true,
-    "icon_theme": "Material Icon Theme",
-    "ui_font_family": "Lilex Nerd Font Mono",
-    "buffer_font_family": "Lilex Nerd Font Mono",
+    "icon_theme": "Catppuccin Latte",
+    "ui_font_family": "JetBrainsMonoNL Nerd Font",
+    "buffer_font_family": "JetBrainsMonoNL Nerd Font",
     "buffer_font_features": {
         "calt": 0, // Removes ligatures
     },
@@ -434,29 +307,152 @@
         "blinking": "on",
         "copy_on_select": true,
         "keep_selection_on_copy": true,
-        "detect_venv": {
-            "on": {
-                "directories": [
-                    ".env",
-                    "env",
-                    ".venv",
-                    "venv"
-                ],
-                "activate_script": "default",
-            },
-        },
-        "env": {},
-        "font_family": "Lilex Nerd Font Mono",
+        "font_family": null,
         "font_size": 15,
         "font_features": {
             "calt": false
         },
-        "option_as_meta": false,
         "button": false,
         "working_directory": "current_project_directory",
     },
     "telemetry": {
         "diagnostics": false,
         "metrics": false,
+    },
+    // ──────────────────────────────────────────────────────────────────────────────
+    // OVERRIDES
+    // ──────────────────────────────────────────────────────────────────────────────
+    "theme_overrides": {
+        "Catppuccin Frappé (Blur) [Heavy]": {
+            "tab.active_background": "#414559"
+        },
+        "Catppuccin Frappé (Blur)": {
+            "tab.active_background": "#414559"
+        },
+        "Catppuccin Macchiato (Blur) [Heavy]": {
+            "tab.active_background": "#414559"
+        },
+        "Catppuccin Macchiato (Blur)": {
+            "tab.active_background": "#414559"
+        }
+    },
+    "experimental.theme_overrides": {
+        "syntax": {
+            "variable.language": {
+                "font_style": "normal",
+            },
+            "variable.language.this": {
+                "font_style": "normal",
+            },
+            "variable.language.self": {
+                "font_style": "normal",
+            },
+            "variable.builtin": {
+                "font_style": "normal",
+            },
+            "constant.builtin": {
+                "font_style": "normal",
+            },
+            "keyword.control": {
+                "font_style": "normal",
+            },
+            "keyword": {
+                "font_style": "normal",
+            },
+            "type.builtin": {
+                "font_style": "normal",
+            },
+            "type.primitive": {
+                "font_style": "normal",
+            },
+            "support.type": {
+                "font_style": "normal",
+            },
+            "support.type.primitive": {
+                "font_style": "normal",
+            },
+            "support.type.builtin": {
+                "font_style": "normal",
+            },
+            "entity.name.type": {
+                "font_style": "normal",
+            },
+            // --- 3. CONSTANTS (undefined, null) ---
+            "constant.language": {
+                "font_style": "normal",
+            },
+            "constant.language.undefined": {
+                "font_style": "normal",
+            },
+            "constant.language.null": {
+                "font_style": "normal",
+            },
+            "constant.language.boolean": {
+                "font_style": "normal",
+            },
+            "boolean": {
+                "font_style": "normal",
+            },
+            "entity.name.function": {
+                "font_style": "normal",
+            },
+            "variable.parameter": {
+                "font_style": "normal",
+            },
+            "variable": {
+                "font_style": "normal",
+            },
+            "comment": {
+                "font_style": "normal",
+            },
+            "comment.doc": {
+                "font_style": "normal",
+            },
+            "storage": {
+                "font_style": "normal",
+            },
+            "storage.type": {
+                "font_style": "normal",
+            },
+            "storage.modifier": {
+                "font_style": "normal",
+            },
+            "markup.italic": {
+                "font_style": "normal",
+            },
+            "markup.quote": {
+                "font_style": "normal",
+            },
+            "function": {
+                "font_style": "normal",
+            },
+            "type": {
+                "font_style": "normal",
+            },
+            "property": {
+                "font_style": "normal",
+            },
+            "attribute": {
+                "font_style": "normal",
+            },
+            "string": {
+                "font_style": "normal",
+            },
+            "constant": {
+                "font_style": "normal",
+            },
+            "operator": {
+                "font_style": "normal",
+            },
+            "variable.special": {
+                "font_style": "normal",
+            },
+            "keyword.self": {
+                "font_style": "normal",
+            },
+            "hint": {
+                "font_style": "normal",
+            },
+        },
     },
 }

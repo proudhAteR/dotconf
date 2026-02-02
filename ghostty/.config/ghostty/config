@@ -49,20 +49,22 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = Catppuccin Frappe
-background-opacity = 0.5
+background-opacity = 0.75
 background-blur-radius = 40
+macos-titlebar-style = transparent
 
 font-size = 15
-font-family = Lilex Nerd Font Mono
+font-family = "JetBrainsMonoNL Nerd Font"
 font-thicken = true
-font-feature = -dlig
+font-feature = -calt
 font-feature = -liga
+font-feature = -dlig
 
 cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
 mouse-hide-while-typing = true
-copy-on-select = true
+copy-on-select = clipboard
 
 auto-update = download
 auto-update-channel = stable

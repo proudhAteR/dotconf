@@ -94,7 +94,7 @@ if status is-interactive
     abbr --add gsp "git stash pop -q"
     abbr --add gres "git reset --hard HEAD"
     abbr --add gi "git status -s"
-    abbr --add ghis "git log --oneline --graph --decorate --all" #git history
+    abbr --add ghs "git log --oneline --graph --decorate --all" #git history
 
     # Docker
     abbr --add d "lazydocker"
