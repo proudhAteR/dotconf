@@ -88,7 +88,9 @@ if status is-interactive
     abbr --add gd "git diff"
     abbr --add grm "git branch -d" #rm branch
     abbr --add go "git checkout" #go to branch
+    abbr --add gob "git checkout -b"
     abbr --add gb "git branch"
+    abbr --add gba "git branch -a" #list all the branches
     abbr --add gm "git merge"
     abbr --add gs "git stash"
     abbr --add gsp "git stash pop -q"
@@ -100,7 +102,9 @@ if status is-interactive
     abbr --add d "lazydocker"
     abbr --add dc "docker compose"
     abbr --add dup "docker compose up -d"
+    abbr --add dub "docker compose up -d --build"
     abbr --add dwn "docker compose down"
+    abbr --add dwnv "docker compose down -v"
 
     # Fly.io
     if type -q fly

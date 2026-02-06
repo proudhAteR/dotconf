@@ -5,10 +5,10 @@
     "theme": "Catppuccin Macchiato (Blur) [Heavy]",
     "use_system_prompts": true,
     "icon_theme": "Catppuccin Latte",
-    "ui_font_family": "JetBrainsMonoNL Nerd Font",
-    "buffer_font_family": "JetBrainsMonoNL Nerd Font",
+    "ui_font_family": "Lilex Nerd Font Mono",
+    "buffer_font_family": "Lilex Nerd Font Mono",
     "buffer_font_features": {
-        "calt": 0, // Removes ligatures
+        "calt": 0,
     },
     "scrollbar": {
         "show": "never",
@@ -67,8 +67,8 @@
         "words_min_length": 3,
         "lsp": true,
     },
-    "features": {
-        "edit_prediction_provider": "none",
+    "edit_predictions": {
+        "provider": "none",
     },
     "agent": {
         "profiles": {

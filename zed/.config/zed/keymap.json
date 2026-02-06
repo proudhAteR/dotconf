@@ -21,7 +21,7 @@
     {
         "context": "Editor",
         "bindings": {
-            "ctrl-cmd-s": [
+            "alt-cmd-;": [
                 "workspace::SendKeystrokes",
                 "cmd-right ;"
             ]

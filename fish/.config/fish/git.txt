@@ -12,7 +12,9 @@ gr      | git pull --rebase
 gd      | git diff
 grm     | git branch -d
 go      | git checkout
+gob     | git checkout -b
 gb      | git branch
+gba     | git branch -a
 gm      | git merge
 gs      | git stash
 gsp     | git stash pop -q

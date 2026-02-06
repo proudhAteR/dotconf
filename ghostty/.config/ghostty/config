@@ -54,7 +54,7 @@ background-blur-radius = 40
 macos-titlebar-style = transparent
 
 font-size = 15
-font-family = "JetBrainsMonoNL Nerd Font"
+font-family = "Lilex Nerd Font Mono"
 font-thicken = true
 font-feature = -calt
 font-feature = -liga
@@ -69,6 +69,6 @@ copy-on-select = clipboard
 auto-update = download
 auto-update-channel = stable
 macos-titlebar-style = tabs
-fullscreen = true
+# fullscreen = true
 window-decoration = auto
-maximize = true
+# maximize = true
