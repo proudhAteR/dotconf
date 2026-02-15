@@ -49,12 +49,12 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = Catppuccin Frappe
-background-opacity = 0.75
+background-opacity = 0.50
 background-blur-radius = 40
 macos-titlebar-style = transparent
 
 font-size = 15
-font-family = "Lilex Nerd Font Mono"
+font-family = "Lilex Nerd Font"
 font-thicken = true
 font-feature = -calt
 font-feature = -liga
@@ -72,3 +72,8 @@ macos-titlebar-style = tabs
 # fullscreen = true
 window-decoration = auto
 # maximize = true
+
+
+#Enable full shell integration
+shell-integration-features = true
+confirm-close-surface = false

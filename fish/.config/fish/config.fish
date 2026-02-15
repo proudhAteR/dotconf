@@ -31,6 +31,12 @@ if test -d "$FLYCTL_INSTALL/bin"
     fish_add_path "$FLYCTL_INSTALL/bin"
 end
 
+
+#5. Fuzzy finder config
+if type -q fzf
+    fzf_configure_bindings --directory=\cf --git_log=\cg --history=\cr --variables=\cv
+end
+
 # ─── Interactive Session Only ─────────────────────────────────────────────────
 if status is-interactive
 
@@ -44,13 +50,12 @@ if status is-interactive
     starship init fish | source
 
     # ─── Abbreviations & Aliases ──────────────────────────────────────────────
-    # To remove abbr run "abbr --erase <abbr>"
+    # To remove abbr run "abbr -e <abbr>"
     # To list abbrs run "abbr --list"
     #
     # Navigation
     abbr --add .. "cd .."
     abbr --add ... "cd ../.."
-    abbr --add .... "cd ../../.."
 
     # Files & Safety
     # Force confirmation on overwrites/deletes
@@ -74,7 +79,7 @@ if status is-interactive
         alias cat="bat"
     end
 
-    # Git (The Essentials)
+    # Git
     abbr --add g "git"
     abbr --add ga "git add"
     abbr --add gaa "git add ."
@@ -94,6 +99,7 @@ if status is-interactive
     abbr --add gm "git merge"
     abbr --add gs "git stash"
     abbr --add gsp "git stash pop -q"
+    abbr --add gst "git stage ."
     abbr --add gres "git reset --hard HEAD"
     abbr --add gi "git status -s"
     abbr --add ghs "git log --oneline --graph --decorate --all" #git history
@@ -117,11 +123,12 @@ if status is-interactive
     # Utils
     abbr --add pm "arch -arm64 brew" # Ghostty is not in the arm arch so I need to specify to brew what arch we are on
     abbr --add clr "clear"
-    abbr --add keygen "openssl rand -base64" # do not forget to specify the length as arg
+    abbr --add keygen "openssl rand -base64" # do not forget to specify the length of the key after
     abbr --add z "zed"
     abbr --add zh "zed ." #zed here
     alias conf="zed ~/dotconf"
-    
+    alias sam="docker_purge" # script created by sam to purge docker
+
     #docs
     abbr --add ffdoc "cat ~/dotconf/fish/.config/fish/fzf.txt"
     abbr --add gdoc "cat ~/dotconf/fish/.config/fish/git.txt"
@@ -133,3 +140,7 @@ if status is-interactive
     # Reload Config
     abbr --add rld "source ~/.config/fish/config.fish"
 end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

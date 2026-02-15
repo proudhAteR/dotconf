@@ -49,6 +49,12 @@ ahead = "[⇡](bold green bg:yellow)[${count}](fg:244 bg:yellow)"
 behind = "[⇣](bold red bg:yellow)[${count}](fg:244 bg:yellow)"
 diverged = "[⇡](bold green bg:yellow)[${ahead_count}](fg:244 bg:yellow)[/](fg:244 bg:yellow)[⇣](bold red bg:yellow)[${behind_count}](fg:244 bg:yellow)"
 
+[git_metrics]
+disabled = false
+added_style = "bold green"
+deleted_style = "bold red"
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+
 [os]
 disabled = false
 style = "bg:red fg:crust"
