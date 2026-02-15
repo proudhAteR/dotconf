@@ -127,7 +127,8 @@ if status is-interactive
     abbr --add z "zed"
     abbr --add zh "zed ." #zed here
     alias conf="zed ~/dotconf"
-    alias sam="docker_purge" # script created by sam to purge docker
+    alias sam="docker_purge" # script created by sam to purge docker https://github.com/sam0rr/docker_purge.git
+    alias boo="ghostty +boo"
 
     #docs
     abbr --add ffdoc "cat ~/dotconf/fish/.config/fish/fzf.txt"

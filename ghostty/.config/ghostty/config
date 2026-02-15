@@ -61,6 +61,7 @@ font-feature = -liga
 font-feature = -dlig
 
 cursor-style = block
+cursor-click-to-move = true
 cursor-style-blink = true
 shell-integration-features = no-cursor
 mouse-hide-while-typing = true
@@ -75,5 +76,5 @@ window-decoration = auto
 
 
 #Enable full shell integration
-shell-integration-features = true
+shell-integration = no-cursor
 confirm-close-surface = false
