@@ -102,6 +102,7 @@ if status is-interactive
     abbr --add gst "git stage ."
     abbr --add gres "git reset --hard HEAD"
     abbr --add gi "git status -s"
+    abbr --add gra "git remote add"
     abbr --add ghs "git log --oneline --graph --decorate --all" #git history
 
     # Docker

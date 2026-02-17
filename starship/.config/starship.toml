@@ -4,6 +4,7 @@ format = """
 [](red)\
 $os\
 $username\
+$sudo\
 [](bg:peach fg:red)\
 $directory\
 [](bg:yellow fg:peach)\
@@ -13,10 +14,14 @@ $c\
 $rust\
 $golang\
 $nodejs\
+$bun\
 $php\
 $java\
 $kotlin\
 $haskell\
+$swift\
+$dotnet\
+$package\
 [](fg:green bg:sapphire)\
 $docker_context\
 [ ](fg:sapphire)\
@@ -25,7 +30,7 @@ $line_break\
 $character"""
 
 palette = 'catppuccin_frappe'
-command_timeout = 2000
+command_timeout = 3000
 
 [fill]
 symbol = " "
@@ -87,6 +92,12 @@ style_user = "bg:red fg:crust"
 style_root = "bg:red fg:crust"
 format = '[ proudhater]($style)'
 
+[sudo]
+style = "bg:red fg:crust"
+symbol = "🧙"
+format = '[ $symbol]($style)'
+disabled = false
+
 [directory]
 style = "bg:peach fg:crust"
 format = "[ $path ]($style)"
@@ -137,6 +148,26 @@ format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
 [haskell]
 symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[swift]
+symbol = " "
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[dotnet]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[bun]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[package]
+symbol = " "
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 

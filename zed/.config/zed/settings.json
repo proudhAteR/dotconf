@@ -25,9 +25,6 @@
         "quick_actions": false,
         "code_actions": false,
     },
-    "indent_guides": {
-        "coloring": "indent_aware",
-    },
     "file_finder": {
         "git_status": true,
         "modal_max_width": "medium",
@@ -42,6 +39,9 @@
     "title_bar": {
         "show_onboarding_banner": false,
         "show_menus": true
+    },
+    "sticky_scroll": {
+        "enabled": true
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // ✍️ EDITOR BEHAVIOR & UX
@@ -67,19 +67,17 @@
     // ──────────────────────────────────────────────────────────────────────────────
     "enable_language_server": true,
     "auto_signature_help": true,
-    "lsp_document_colors": "inlay",
     "show_completions_on_input": true,
-    "snippet_sort_order": "bottom",
+    "snippet_sort_order": "inline",
     "completions": {
         "words_min_length": 3,
-        "lsp": true,
-        "words": "enabled"
+        "lsp_insert_mode": "insert"
     },
     "edit_predictions": {
         "provider": "none",
     },
     "agent": {
-        "default_profile": "write",
+        "default_profile": "ask",
         "always_allow_tool_actions": true,
         "default_model": {
             "provider": "google",
@@ -92,7 +90,6 @@
     // 🧰 FORMATTING & CODING STANDARDS
     // ──────────────────────────────────────────────────────────────────────────────
     "tab_size": 4,
-    "hard_tabs": false,
     "format_on_save": "on",
     "formatter": "language_server",
     "remove_trailing_whitespace_on_save": true,
@@ -109,7 +106,6 @@
         "show_background": false,
         "enabled": true,
         "show_type_hints": true,
-        "show_other_hints": false,
     },
     "soft_wrap": "preferred_line_length",
     "preferred_line_length": 120,
@@ -119,13 +115,12 @@
     "auto_indent_on_paste": true,
     "always_treat_brackets_as_autoclosed": true,
     "colorize_brackets": true,
-    "expand_excerpt_lines": 6,
     // ──────────────────────────────────────────────────────────────────────────────
     // 🌲 PANEL CONFIGURATIONS
     // ──────────────────────────────────────────────────────────────────────────────
     "project_panel": {
         "dock": "left",
-        "auto_fold_dirs": true,
+        "auto_fold_dirs": false,
         "git_status": true,
         "hide_root": true,
         "hide_gitignore": false,
@@ -133,6 +128,10 @@
             "show": "always",
         },
         "entry_spacing": "comfortable",
+        "button": false,
+        "scrollbar": {
+            "show": "never"
+        }
     },
     "git_panel": {
         "tree_view": true,
@@ -168,7 +167,6 @@
             "language_servers": [
                 "tailwindcss-intellisense-css",
                 "!vscode-css-language-server",
-                "...",
             ],
         },
         "Swift": {
@@ -176,7 +174,6 @@
             "language_servers": [
                 "sourcekit-lsp"
             ],
-            "formatter": "language_server",
             "format_on_save": "on",
         },
         "PHP": {
@@ -185,7 +182,6 @@
                 "!phpactor",
                 "!phptools",
                 "!emmet",
-                "...",
             ],
             "format_on_save": "on",
             "formatter": "language_server",

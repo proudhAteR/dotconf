@@ -76,5 +76,5 @@ window-decoration = auto
 
 
 #Enable full shell integration
-shell-integration = no-cursor
+shell-integration = detect
 confirm-close-surface = false
