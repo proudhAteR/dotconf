@@ -3,6 +3,9 @@
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
     "theme": "Catppuccin Macchiato - No Italics",
+    "session": {
+        "trust_all_worktrees": true
+    },
     "icon_theme": "Catppuccin Latte",
     "use_system_prompts": true,
     "ui_font_family": "Lilex Nerd Font",
@@ -40,14 +43,10 @@
         "show_onboarding_banner": false,
         "show_menus": true
     },
-    "sticky_scroll": {
-        "enabled": true
-    },
     // ──────────────────────────────────────────────────────────────────────────────
     // ✍️ EDITOR BEHAVIOR & UX
     // ──────────────────────────────────────────────────────────────────────────────
     "base_keymap": "VSCode",
-    "vertical_scroll_margin": 5,
     "cursor_shape": "block",
     "cursor_blink": true,
     "hide_mouse": "on_typing_and_movement",
@@ -62,23 +61,28 @@
             "milliseconds": 1000,
         },
     },
+    "indent_guides": {
+        "coloring": "indent_aware"
+    },
     // ──────────────────────────────────────────────────────────────────────────────
     // 🧠 INTELLISENSE & AI
     // ──────────────────────────────────────────────────────────────────────────────
     "enable_language_server": true,
-    "auto_signature_help": true,
+    "auto_signature_help": false,
     "show_completions_on_input": true,
     "snippet_sort_order": "inline",
     "completions": {
-        "words_min_length": 3,
-        "lsp_insert_mode": "insert"
+        "words_min_length": 4,
+        "lsp_insert_mode": "replace"
     },
     "edit_predictions": {
         "provider": "none",
     },
     "agent": {
+        "tool_permissions": {
+            "default": "allow"
+        },
         "default_profile": "ask",
-        "always_allow_tool_actions": true,
         "default_model": {
             "provider": "google",
             "model": "gemini-3-pro-preview",
@@ -96,8 +100,8 @@
     "ensure_final_newline_on_save": true,
     "use_on_type_format": true,
     "code_actions_on_format": {
-        "source.organizeImports": true,
-        "source.fixAll.esLint": true,
+        "source.fixAll": true,
+        "source.organizeImports": true
     },
     "prettier": {
         "allowed": false,
@@ -278,18 +282,20 @@
         ],
     },
     "file_scan_exclusions": [
-        "**node_modules/**",
-        "build/**",
-        ".git/**",
-        ".venv/**",
-        "coverage/**",
-        //"**dist",
-        "*.log",
-        "*.lock",
-        ".DS_Store",
-        "**package-lock.json",
-        "**.d.ts",
-        ".turbo",
+        "**/node_modules/**",
+        "**/.output/**",
+        "**/.nuxt/**",
+        "**/.next/**",
+        //"**/dist/**",
+        "**/build/**",
+        "**/.turbo/**",
+        "**/vendor/**",
+        "**/.git/**",
+        "**/.cache/**",
+        "**/coverage/**",
+        "**/*.log",
+        "**/*.lock",
+        "**/*.d.ts"
     ],
     // ──────────────────────────────────────────────────────────────────────────────
     // 💻 TERMINAL

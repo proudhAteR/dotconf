@@ -126,7 +126,7 @@ if status is-interactive
     abbr --add clr "clear"
     abbr --add keygen "openssl rand -base64" # do not forget to specify the length of the key after
     abbr --add z "zed"
-    abbr --add zh "zed ." #zed here
+    abbr --add zz "zed ." #zed here
     alias conf="zed ~/dotconf"
     alias sam="docker_purge" # script created by sam to purge docker https://github.com/sam0rr/docker_purge.git
     alias boo="ghostty +boo"
