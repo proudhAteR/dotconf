@@ -6,10 +6,10 @@
     "session": {
         "trust_all_worktrees": true
     },
-    "icon_theme": "Catppuccin Latte",
+    "icon_theme": "Light Charmed Icons",
     "use_system_prompts": true,
-    "ui_font_family": "Lilex Nerd Font",
-    "buffer_font_family": "Lilex Nerd Font",
+    "ui_font_family": "FiraMono Nerd Font",
+    "buffer_font_family": "FiraMono Nerd Font",
     "buffer_font_features": {
         "calt": 0,
     },
@@ -82,7 +82,7 @@
         "tool_permissions": {
             "default": "allow"
         },
-        "default_profile": "ask",
+        "default_profile": "write",
         "default_model": {
             "provider": "google",
             "model": "gemini-3-pro-preview",
@@ -295,7 +295,12 @@
         "**/coverage/**",
         "**/*.log",
         "**/*.lock",
-        "**/*.d.ts"
+        "**/*.d.ts",
+        "**/.DS_Store",
+        "**/.idea/**",
+        "**/*-lock.json",
+        "**/.build/**",
+        "**/.swiftpm/**"
     ],
     // ──────────────────────────────────────────────────────────────────────────────
     // 💻 TERMINAL

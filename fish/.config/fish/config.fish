@@ -1,7 +1,4 @@
 # ─── Environment Variables ────────────────────────────────────────────────────
-# Disable the default greeting (use -g to avoid writing to universal variables on every shell launch)
-set -g fish_greeting
-
 # Editor setup
 if type -q zed
     set -gx EDITOR "zed --wait"
@@ -12,7 +9,7 @@ end
 
 # 1. Homebrew (macOS)
 if test -d /opt/homebrew
-    eval (/opt/homebrew/bin/brew shellenv)
+    /opt/homebrew/bin/brew shellenv | source
 end
 
 # 2. OrbStack
@@ -84,7 +81,6 @@ if status is-interactive
     abbr --add ga "git add"
     abbr --add gaa "git add ."
     abbr --add gc "git commit -m"
-    abbr --add gca "git commit -am"
     abbr --add game "git commit --amend --no-edit"
     abbr --add gp "git push"
     abbr --add gf "git fetch --prune"
@@ -99,7 +95,8 @@ if status is-interactive
     abbr --add gm "git merge"
     abbr --add gs "git stash"
     abbr --add gsp "git stash pop -q"
-    abbr --add gst "git stage ."
+    abbr --add gst "git stage"
+    abbr --add gsta "git stage ."
     abbr --add gres "git reset --hard HEAD"
     abbr --add gi "git status -s"
     abbr --add gra "git remote add"
@@ -140,7 +137,7 @@ if status is-interactive
     abbr --add ffmore "fzf_configure_bindings --help"
 
     # Reload Config
-    abbr --add rld "source ~/.config/fish/config.fish"
+    abbr --add rld "source ~/.config/fish/config.fish; fish_greeting"
 end
 
 # bun

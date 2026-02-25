@@ -49,12 +49,12 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = Catppuccin Frappe
-background-opacity = 0.50
+background-opacity = 0.85
 background-blur-radius = 40
 macos-titlebar-style = transparent
 
 font-size = 15
-font-family = "Lilex Nerd Font"
+font-family = "FiraMono Nerd Font"
 font-thicken = true
 font-feature = -calt
 font-feature = -liga

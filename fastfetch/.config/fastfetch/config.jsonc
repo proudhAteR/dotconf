@@ -19,7 +19,6 @@
         }
     },
     "modules": [
-        // SYSTEM
         {
             "type": "os",
             "key": " OS"
@@ -45,7 +44,6 @@
             "key": " Shell"
         },
         "break",
-        // DISPLAY & UI
         {
             "type": "de",
             "key": " DE"
@@ -55,7 +53,6 @@
             "key": " Font"
         },
         "break",
-        // HARDWARE
         {
             "type": "cpu",
             "key": " CPU"
@@ -69,16 +66,10 @@
             "key": " Battery"
         },
         "break",
-        // NETWORK
         {
             "type": "localip",
             "key": " Local IP",
             "compact": true
-        },
-        {
-            "type": "publicip",
-            "key": " Public IP",
-            "timeout": 1000
         },
         "break",
         "colors"

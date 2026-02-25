@@ -36,7 +36,7 @@
     {
         "context": "Workspace",
         "bindings": {
-            "alt-cmd-g": "git_panel::ToggleFocus"
+            "shift-cmd-g": "git_panel::ToggleFocus"
         }
     },
     {
@@ -54,6 +54,12 @@
     {
         "bindings": {
             "ctrl-f": "project_panel::FoldDirectory"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "cmd-t": "workspace::NewTerminal"
         }
     }
 ]

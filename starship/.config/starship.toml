@@ -30,7 +30,7 @@ $line_break\
 $character"""
 
 palette = 'catppuccin_frappe'
-command_timeout = 3000
+command_timeout = 5000
 
 [fill]
 symbol = " "
