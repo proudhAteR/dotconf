@@ -9,7 +9,7 @@ end
 
 # 1. Homebrew (macOS)
 if test -d /opt/homebrew
-    /opt/homebrew/bin/brew shellenv | source
+    eval (/opt/homebrew/bin/brew shellenv)
 end
 
 # 2. OrbStack
@@ -81,26 +81,30 @@ if status is-interactive
     abbr --add ga "git add"
     abbr --add gaa "git add ."
     abbr --add gc "git commit -m"
+    abbr --add gca "git commit -am"
     abbr --add game "git commit --amend --no-edit"
     abbr --add gp "git push"
+    abbr --add gpf "git push --force"
     abbr --add gf "git fetch --prune"
     abbr --add gu "git fetch --prune && git pull --rebase" #update project
     abbr --add gr "git pull --rebase" #rebase
     abbr --add gd "git diff"
     abbr --add grm "git branch -d" #rm branch
+    abbr --add gR "git branch -D"
     abbr --add go "git checkout" #go to branch
     abbr --add gob "git checkout -b"
     abbr --add gb "git branch"
     abbr --add gba "git branch -a" #list all the branches
     abbr --add gm "git merge"
     abbr --add gs "git stash"
+    abbr --add gsh "git show"
     abbr --add gsp "git stash pop -q"
     abbr --add gst "git stage"
     abbr --add gsta "git stage ."
     abbr --add gres "git reset --hard HEAD"
     abbr --add gi "git status -s"
     abbr --add gra "git remote add"
-    abbr --add ghs "git log --oneline --graph --decorate --all" #git history
+    abbr --add ghs "git log --graph --decorate --all" #git history
 
     # Docker
     abbr --add d "lazydocker"
@@ -112,14 +116,13 @@ if status is-interactive
 
     # Fly.io
     if type -q fly
-        abbr --add fdeploy "fly deploy"
-        abbr --add fstatus "fly status"
-        abbr --add flogs "fly logs"
+        abbr --add fdep "fly deploy"
+        abbr --add fst "fly status"
+        abbr --add flg "fly logs"
         abbr --add fssh "fly ssh console"
     end
 
     # Utils
-    abbr --add pm "arch -arm64 brew" # Ghostty is not in the arm arch so I need to specify to brew what arch we are on
     abbr --add clr "clear"
     abbr --add keygen "openssl rand -base64" # do not forget to specify the length of the key after
     abbr --add z "zed"

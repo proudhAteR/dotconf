@@ -1,5 +1,5 @@
 function fish_greeting
     set_color red
-    figlet prodhater 
+    figlet proudhater 
     set_color normal
 end

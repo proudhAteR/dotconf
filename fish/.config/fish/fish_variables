@@ -12,3 +12,4 @@ SETUVAR _fisher_plugins:edouard\x2dlopez/ayu\x2dtheme\x2efish\x1eedc/bass\x1ejor
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR ayu_variant:dark
 SETUVAR fish_greeting:\x1d
+SETUVAR fish_user_paths:/opt/homebrew/sbin\x1e/opt/homebrew/bin
