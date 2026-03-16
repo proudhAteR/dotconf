@@ -8,10 +8,10 @@
     },
     "icon_theme": "Light Charmed Icons",
     "use_system_prompts": true,
-    "ui_font_family": "FiraMono Nerd Font",
-    "buffer_font_family": "FiraMono Nerd Font",
+    "ui_font_family": "SFMono Nerd Font",
+    "buffer_font_family": "SFMono Nerd Font",
     "buffer_font_features": {
-        "calt": 0,
+        "calt": false,
     },
     "scrollbar": {
         "show": "never",
@@ -29,8 +29,7 @@
         "code_actions": false,
     },
     "file_finder": {
-        "git_status": true,
-        "modal_max_width": "medium",
+        "modal_max_width": "small",
         "include_ignored": "all",
         "file_icons": true,
         "skip_focus_for_active_in_search": true
@@ -73,22 +72,26 @@
     "snippet_sort_order": "inline",
     "completions": {
         "words_min_length": 4,
-        "lsp_insert_mode": "replace"
     },
     "edit_predictions": {
         "provider": "none",
     },
     "agent": {
+        "inline_assistant_model": {
+            "provider": "google",
+            "model": "gemini-3-flash-preview",
+            "enable_thinking": true
+        },
         "tool_permissions": {
             "default": "allow"
         },
-        "default_profile": "write",
+        "default_profile": "ask",
         "default_model": {
             "provider": "google",
             "model": "gemini-3-pro-preview",
         },
         "model_parameters": [],
-        "enabled": true,
+        "enabled": false,
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 🧰 FORMATTING & CODING STANDARDS
@@ -197,6 +200,12 @@
                 "intelephense",
             ],
         },
+        "CSharp": {
+            "language_servers": [
+                "!omnisharp",
+                "roslyn",
+            ]
+        },
     },
     "lsp": {
         "tailwindcss-language-server": {
@@ -286,7 +295,7 @@
         "**/.output/**",
         "**/.nuxt/**",
         "**/.next/**",
-        //"**/dist/**",
+        "**/dist/**",
         "**/build/**",
         "**/.turbo/**",
         "**/vendor/**",
@@ -318,6 +327,7 @@
         "keep_selection_on_copy": true,
         "font_family": null,
         "font_size": 15,
+        "font_weight": 500,
         "font_features": {
             "calt": false
         },

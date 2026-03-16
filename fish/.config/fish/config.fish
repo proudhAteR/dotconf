@@ -106,6 +106,9 @@ if status is-interactive
     abbr --add gra "git remote add"
     abbr --add ghs "git log --graph --decorate --all" #git history
 
+    #Github CLI
+    abbr --add g- "gh dash"
+
     # Docker
     abbr --add d "lazydocker"
     abbr --add dc "docker compose"

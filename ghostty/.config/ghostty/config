@@ -54,7 +54,7 @@ background-blur-radius = 40
 macos-titlebar-style = transparent
 
 font-size = 15
-font-family = "FiraMono Nerd Font"
+font-family = "SFMono Nerd Font"
 font-thicken = true
 font-feature = -calt
 font-feature = -liga
