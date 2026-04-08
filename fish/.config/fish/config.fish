@@ -80,8 +80,8 @@ if status is-interactive
     abbr --add g "git"
     abbr --add ga "git add"
     abbr --add gaa "git add ."
-    abbr --add gc "git commit -m"
-    abbr --add gca "git commit -am"
+    abbr --add gc 'git commit -m'
+    abbr --add gca 'git commit -am'
     abbr --add game "git commit --amend --no-edit"
     abbr --add gp "git push"
     abbr --add gpf "git push --force"
@@ -102,12 +102,13 @@ if status is-interactive
     abbr --add gst "git stage"
     abbr --add gsta "git stage ."
     abbr --add gres "git reset --hard HEAD"
-    abbr --add gi "git status -s"
+    abbr --add gi "git status -s -b -M"
     abbr --add gra "git remote add"
     abbr --add ghs "git log --graph --decorate --all" #git history
 
     #Github CLI
     abbr --add g- "gh dash"
+    abbr --add gweb "gh repo view --web"
 
     # Docker
     abbr --add d "lazydocker"

@@ -2,17 +2,25 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "Catppuccin Macchiato - No Italics",
+    "buffer_line_height": "comfortable",
+    "theme": "One Dark",
     "session": {
         "trust_all_worktrees": true
     },
     "icon_theme": "Light Charmed Icons",
     "use_system_prompts": true,
-    "ui_font_family": "SFMono Nerd Font",
-    "buffer_font_family": "SFMono Nerd Font",
+    "ui_font_family": "IBM Plex Mono",
+    "buffer_font_family": "IBM Plex Mono",
+    "buffer_font_fallbacks": [
+        "JetBrainsMono Nerd Font"
+    ],
     "buffer_font_features": {
         "calt": false,
+        "liga": false
     },
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 🖼️ UI/COMPONENTS
+    // ──────────────────────────────────────────────────────────────────────────────
     "scrollbar": {
         "show": "never",
     },
@@ -42,6 +50,9 @@
         "show_onboarding_banner": false,
         "show_menus": true
     },
+    "debugger": {
+        "dock": "left"
+    },
     // ──────────────────────────────────────────────────────────────────────────────
     // ✍️ EDITOR BEHAVIOR & UX
     // ──────────────────────────────────────────────────────────────────────────────
@@ -59,9 +70,6 @@
         "after_delay": {
             "milliseconds": 1000,
         },
-    },
-    "indent_guides": {
-        "coloring": "indent_aware"
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 🧠 INTELLISENSE & AI
@@ -111,14 +119,14 @@
     },
     "inlay_hints": {
         "show_background": false,
-        "enabled": true,
+        "enabled": false,
         "show_type_hints": true,
     },
     "soft_wrap": "preferred_line_length",
     "preferred_line_length": 120,
     "allow_rewrap": "in_comments",
     "use_autoclose": true,
-    "auto_indent": true,
+    "auto_indent": "syntax_aware",
     "auto_indent_on_paste": true,
     "always_treat_brackets_as_autoclosed": true,
     "colorize_brackets": true,
@@ -142,7 +150,9 @@
     },
     "git_panel": {
         "tree_view": true,
+        "show_count_badge": true,
         "dock": "right",
+        "file_icons": true
     },
     "outline_panel": {
         "dock": "right",
@@ -308,8 +318,13 @@
         "**/.DS_Store",
         "**/.idea/**",
         "**/*-lock.json",
+        "**/*.csproj",
+        "**/*.sln",
         "**/.build/**",
-        "**/.swiftpm/**"
+        "**/bin/**",
+        "**/obj/**",
+        "**/.swiftpm/**",
+        "**/*.tsbuildinfo"
     ],
     // ──────────────────────────────────────────────────────────────────────────────
     // 💻 TERMINAL
@@ -325,12 +340,6 @@
         "blinking": "on",
         "copy_on_select": true,
         "keep_selection_on_copy": true,
-        "font_family": null,
-        "font_size": 15,
-        "font_weight": 500,
-        "font_features": {
-            "calt": false
-        },
         "button": false,
         "working_directory": "current_project_directory",
     },

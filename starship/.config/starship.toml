@@ -11,6 +11,7 @@ $directory\
 $git_branch$git_status\
 [](fg:yellow bg:green)\
 $c\
+$python\
 $rust\
 $golang\
 $nodejs\
