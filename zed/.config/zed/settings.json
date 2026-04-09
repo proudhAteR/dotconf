@@ -2,7 +2,6 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🖼️ UI & THEME
     // ──────────────────────────────────────────────────────────────────────────────
-    "buffer_line_height": "comfortable",
     "theme": "One Dark",
     "session": {
         "trust_all_worktrees": true
@@ -77,29 +76,16 @@
     "enable_language_server": true,
     "auto_signature_help": false,
     "show_completions_on_input": true,
-    "snippet_sort_order": "inline",
     "completions": {
         "words_min_length": 4,
     },
     "edit_predictions": {
         "provider": "none",
     },
-    "agent": {
-        "inline_assistant_model": {
-            "provider": "google",
-            "model": "gemini-3-flash-preview",
-            "enable_thinking": true
-        },
-        "tool_permissions": {
-            "default": "allow"
-        },
-        "default_profile": "ask",
-        "default_model": {
-            "provider": "google",
-            "model": "gemini-3-pro-preview",
-        },
-        "model_parameters": [],
-        "enabled": false,
+    "agent_servers": {
+        "codex-acp": {
+            "type": "registry"
+        }
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 🧰 FORMATTING & CODING STANDARDS
@@ -112,10 +98,8 @@
     "use_on_type_format": true,
     "code_actions_on_format": {
         "source.fixAll": true,
+        "source.fixAll.ts": true,
         "source.organizeImports": true
-    },
-    "prettier": {
-        "allowed": false,
     },
     "inlay_hints": {
         "show_background": false,
@@ -125,7 +109,6 @@
     "soft_wrap": "preferred_line_length",
     "preferred_line_length": 120,
     "allow_rewrap": "in_comments",
-    "use_autoclose": true,
     "auto_indent": "syntax_aware",
     "auto_indent_on_paste": true,
     "always_treat_brackets_as_autoclosed": true,

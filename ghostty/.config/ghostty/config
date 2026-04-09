@@ -54,7 +54,7 @@ background-opacity = 0.9
 background-blur-radius = 40
 macos-titlebar-style = transparent
 window-decoration = auto
-macos-titlebar-style = native
+macos-titlebar-style = tabs
 
 # Font
 font-size = 15
