@@ -1,30 +1,34 @@
 {
     // ──────────────────────────────────────────────────────────────────────────────
-    // 🖼️ UI & THEME
+    // 🎨 THEME & FONTS
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "One Dark",
-    "session": {
-        "trust_all_worktrees": true
-    },
+    "theme": "One Dark Pro",
     "icon_theme": "Light Charmed Icons",
-    "use_system_prompts": true,
-    "ui_font_family": "IBM Plex Mono",
-    "buffer_font_family": "IBM Plex Mono",
+    "ui_font_family": "JetBrains Mono NL",
+    "ui_font_size": 14,
+    "buffer_font_family": "JetBrains Mono NL",
     "buffer_font_fallbacks": [
         "JetBrainsMono Nerd Font"
     ],
+    "buffer_font_size": 13.5,
+    "buffer_font_weight": 500,
+    "buffer_line_height": {
+        "custom": 1.8
+    },
     "buffer_font_features": {
+        "liga": false,
         "calt": false,
-        "liga": false
+        "kern": true,
+        "ss01": true,
+        "ss02": true
     },
     // ──────────────────────────────────────────────────────────────────────────────
-    // 🖼️ UI/COMPONENTS
+    // 🖼️ UI COMPONENTS
     // ──────────────────────────────────────────────────────────────────────────────
     "scrollbar": {
-        "show": "never",
+        "show": "never"
     },
     "tabs": {
-        "file_icons": true,
         "show_close_button": "hidden",
         "git_status": true,
         "activate_on_close": "left_neighbour",
@@ -33,7 +37,7 @@
     "toolbar": {
         "breadcrumbs": false,
         "quick_actions": false,
-        "code_actions": false,
+        "code_actions": false
     },
     "file_finder": {
         "modal_max_width": "small",
@@ -43,18 +47,22 @@
     },
     "gutter": {
         "min_line_number_digits": 0,
-        "folds": true,
+        "folds": true
     },
     "title_bar": {
         "show_onboarding_banner": false,
-        "show_menus": true
+        "show_menus": false
     },
     "debugger": {
         "dock": "left"
     },
     // ──────────────────────────────────────────────────────────────────────────────
-    // ✍️ EDITOR BEHAVIOR & UX
+    // ✍️ EDITOR BEHAVIOR
     // ──────────────────────────────────────────────────────────────────────────────
+    "session": {
+        "trust_all_worktrees": true
+    },
+    "use_system_prompts": true,
     "base_keymap": "VSCode",
     "cursor_shape": "block",
     "cursor_blink": true,
@@ -67,20 +75,20 @@
     "confirm_quit": false,
     "autosave": {
         "after_delay": {
-            "milliseconds": 1000,
-        },
+            "milliseconds": 1000
+        }
     },
     // ──────────────────────────────────────────────────────────────────────────────
-    // 🧠 INTELLISENSE & AI
+    // 🧠 AI & COMPLETIONS
     // ──────────────────────────────────────────────────────────────────────────────
     "enable_language_server": true,
     "auto_signature_help": false,
     "show_completions_on_input": true,
     "completions": {
-        "words_min_length": 4,
+        "words_min_length": 4
     },
     "edit_predictions": {
-        "provider": "none",
+        "provider": "none"
     },
     "agent_servers": {
         "codex-acp": {
@@ -88,7 +96,7 @@
         }
     },
     // ──────────────────────────────────────────────────────────────────────────────
-    // 🧰 FORMATTING & CODING STANDARDS
+    // 🧰 FORMATTING
     // ──────────────────────────────────────────────────────────────────────────────
     "tab_size": 4,
     "format_on_save": "on",
@@ -104,7 +112,7 @@
     "inlay_hints": {
         "show_background": false,
         "enabled": false,
-        "show_type_hints": true,
+        "show_type_hints": true
     },
     "soft_wrap": "preferred_line_length",
     "preferred_line_length": 120,
@@ -112,9 +120,8 @@
     "auto_indent": "syntax_aware",
     "auto_indent_on_paste": true,
     "always_treat_brackets_as_autoclosed": true,
-    "colorize_brackets": true,
     // ──────────────────────────────────────────────────────────────────────────────
-    // 🌲 PANEL CONFIGURATIONS
+    // 🌲 PANELS
     // ──────────────────────────────────────────────────────────────────────────────
     "project_panel": {
         "dock": "left",
@@ -123,7 +130,7 @@
         "hide_root": true,
         "hide_gitignore": false,
         "indent_guides": {
-            "show": "always",
+            "show": "always"
         },
         "entry_spacing": "comfortable",
         "button": false,
@@ -135,70 +142,71 @@
         "tree_view": true,
         "show_count_badge": true,
         "dock": "right",
-        "file_icons": true
+        "file_icons": false
     },
     "outline_panel": {
-        "dock": "right",
+        "dock": "right"
     },
     "collaboration_panel": {
-        "dock": "right",
+        "dock": "right"
     },
     "notification_panel": {
-        "dock": "right",
+        "dock": "right"
     },
     // ──────────────────────────────────────────────────────────────────────────────
-    // 🌿 GIT SETTINGS
+    // 🌿 GIT
     // ──────────────────────────────────────────────────────────────────────────────
     "git": {
         "blame": {
-            "show_avatar": true,
+            "show_avatar": true
         },
         "git_gutter": "tracked_files",
         "inline_blame": {
             "enabled": true,
-            "show_commit_summary": false,
-        },
+            "show_commit_summary": false
+        }
     },
     // ──────────────────────────────────────────────────────────────────────────────
-    // 🧩 LANGUAGE SPECIFIC & LSP
+    // 🧩 LANGUAGES & LSP
     // ──────────────────────────────────────────────────────────────────────────────
     "languages": {
         "CSS": {
             "language_servers": [
                 "tailwindcss-intellisense-css",
-                "!vscode-css-language-server",
-            ],
+                "!vscode-css-language-server"
+            ]
         },
         "Swift": {
             "enable_language_server": true,
             "language_servers": [
                 "sourcekit-lsp"
             ],
-            "format_on_save": "on",
+            "format_on_save": "on"
         },
         "PHP": {
             "language_servers": [
                 "intelephense",
                 "!phpactor",
+                "!intelephense",
                 "!phptools",
-                "!emmet",
+                "!emmet"
             ],
             "format_on_save": "on",
-            "formatter": "language_server",
+            "formatter": "language_server"
         },
         "Latte": {
             "language_servers": [
                 "tailwindcss-language-server",
                 "emmet",
-                "intelephense",
-            ],
+                "intelephense"
+            ]
         },
         "CSharp": {
             "language_servers": [
                 "!omnisharp",
-                "roslyn",
+                "roslyn"
             ]
-        },
+        }
     },
     "lsp": {
         "tailwindcss-language-server": {
@@ -210,47 +218,54 @@
                 ],
                 "experimental": {
                     "classRegex": [
-                        // Matches: class => "..." or class: "..." (Latte params/arrays)
                         "(?:class|className)\\s*(?:=>|:)\\s*[\"']([^\"']*)[\"']",
-                        // Matches: $class = "..." or $myClass = "..." (Latte variables)
                         "\\$[a-zA-Z]*[Cc]lass(?:Name)?\\s*=\\s*[\"']([^\"']*)[\"']",
-                    ],
+                        "\\.className\\s*[+]?=\\s*['\"]([^'\"]*)['\"]",
+                        "\\.setAttributeNS\\(.*,\\s*['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
+                        "\\.setAttribute\\(['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
+                        "\\.classList\\.add\\(['\"]([^'\"]*)['\"]",
+                        "\\.classList\\.remove\\(['\"]([^'\"]*)['\"]",
+                        "\\.classList\\.toggle\\(['\"]([^'\"]*)['\"]",
+                        "\\.classList\\.contains\\(['\"]([^'\"]*)['\"]",
+                        "\\.classList\\.replace\\(\\s*['\"]([^'\"]*)['\"]",
+                        "\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]"
+                    ]
                 },
                 "emmetCompletions": true,
                 "includeLanguages": {
                     "latte": "html",
-                    "pug": "html",
+                    "pug": "html"
                 },
-                "hovers": true,
-            },
+                "hovers": true
+            }
         },
         "sourcekit-lsp": {
             "binary": {
-                "path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp",
-            },
+                "path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp"
+            }
         },
         "vtsls": {
             "settings": {
                 "typescript": {
                     "updateImportsOnFileMove": {
-                        "enabled": "always",
+                        "enabled": "always"
                     },
                     "format": {
                         "semicolons": "insert",
                         "trimTrailingWhitespace": true,
-                        "trimTrailingCommas": true,
-                    },
+                        "trimTrailingCommas": true
+                    }
                 },
                 "javascript": {
                     "updateImportsOnFileMove": {
-                        "enabled": "always",
+                        "enabled": "always"
                     },
                     "format": {
                         "semicolons": "insert",
-                        "trimTrailingWhitespace": true,
-                    },
-                },
-            },
+                        "trimTrailingWhitespace": true
+                    }
+                }
+            }
         },
         "yaml-language-server": {
             "settings": {
@@ -259,10 +274,10 @@
                         "!env scalar",
                         "!env sequence",
                         "!env mapping"
-                    ],
-                },
-            },
-        },
+                    ]
+                }
+            }
+        }
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 📂 FILE TYPES & EXCLUSIONS
@@ -281,7 +296,7 @@
         ],
         "latte": [
             "*.latte"
-        ],
+        ]
     },
     "file_scan_exclusions": [
         "**/node_modules/**",
@@ -313,21 +328,25 @@
     // 💻 TERMINAL
     // ──────────────────────────────────────────────────────────────────────────────
     "terminal": {
+        "font_weight": 600,
         "scrollbar": {
-            "show": "never",
+            "show": "never"
         },
         "toolbar": {
-            "breadcrumbs": false,
+            "breadcrumbs": false
         },
         "alternate_scroll": "on",
         "blinking": "on",
         "copy_on_select": true,
         "keep_selection_on_copy": true,
         "button": false,
-        "working_directory": "current_project_directory",
+        "working_directory": "current_project_directory"
     },
+    // ──────────────────────────────────────────────────────────────────────────────
+    // 📡 TELEMETRY
+    // ──────────────────────────────────────────────────────────────────────────────
     "telemetry": {
         "diagnostics": false,
-        "metrics": false,
-    },
+        "metrics": false
+    }
 }
