@@ -49,7 +49,7 @@
 # resize-overlay-duration = 4s 200ms
 
 # UI/theme
-theme = Atom One Dark
+theme = One Dark Two
 background-opacity = 0.9
 background-blur-radius = 40
 macos-titlebar-style = transparent
