@@ -2,14 +2,13 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🎨 THEME & FONTS
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "One Dark",
-    "icon_theme": "Light Charmed Icons",
-    "ui_font_family": "JetBrains Mono NL",
+    "theme": "Catppuccin Macchiato - No Italics",
     "ui_font_size": 14,
     "buffer_font_size": 13,
-    "buffer_font_family": "JetBrains Mono NL",
+    "ui_font_family": "SF Mono",
+    "buffer_font_family": "SF Mono",
     "buffer_font_fallbacks": [
-        "JetBrainsMono Nerd Font"
+        "FiraMono Nerd Font"
     ],
     "buffer_font_features": {
         "liga": false,
@@ -20,6 +19,12 @@
     // ──────────────────────────────────────────────────────────────────────────────
     "scrollbar": {
         "show": "never"
+    },
+    "agent": {
+        "sidebar_side": "left",
+        "dock": "right",
+        "favorite_models": [],
+        "model_parameters": []
     },
     "tabs": {
         "show_close_button": "hidden",
@@ -47,7 +52,7 @@
         "show_menus": false
     },
     "debugger": {
-        "dock": "left"
+        "dock": "bottom"
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // ✍️ EDITOR BEHAVIOR
@@ -84,6 +89,12 @@
         "provider": "none"
     },
     "agent_servers": {
+        "opencode": {
+            "type": "registry"
+        },
+        "claude-acp": {
+            "type": "registry"
+        },
         "codex-acp": {
             "type": "registry"
         }
@@ -117,7 +128,7 @@
     // 🌲 PANELS
     // ──────────────────────────────────────────────────────────────────────────────
     "project_panel": {
-        "dock": "left",
+        "dock": "right",
         "auto_fold_dirs": false,
         "git_status": true,
         "hide_root": true,
@@ -191,6 +202,18 @@
                 "intelephense"
             ]
         },
+        "TypeScript": {
+            "language_servers": [
+                "vtsls",
+                "!eslint"
+            ]
+        },
+        "JavaScript": {
+            "language_servers": [
+                "vtsls",
+                "!eslint"
+            ]
+        }
     },
     "lsp": {
         "tailwindcss-language-server": {
@@ -237,8 +260,9 @@
                     "format": {
                         "semicolons": "insert",
                         "trimTrailingWhitespace": true,
-                        "trimTrailingCommas": true
-                    }
+                        "trimTrailingCommas": true,
+                        "tab_size": 2
+                    },
                 },
                 "javascript": {
                     "updateImportsOnFileMove": {
@@ -246,7 +270,8 @@
                     },
                     "format": {
                         "semicolons": "insert",
-                        "trimTrailingWhitespace": true
+                        "trimTrailingWhitespace": true,
+                        "tab_size": 2
                     }
                 }
             }

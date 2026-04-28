@@ -36,7 +36,7 @@
     {
         "context": "Workspace",
         "bindings": {
-            "shift-cmd-g": "git_panel::ToggleFocus"
+            "cmd-shift-g": "git_panel::Toggle"
         }
     },
     {
@@ -61,5 +61,5 @@
         "bindings": {
             "cmd-t": "workspace::NewTerminal"
         }
-    }
+    },
 ]
