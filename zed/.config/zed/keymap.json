@@ -62,4 +62,16 @@
             "cmd-t": "workspace::NewTerminal"
         }
     },
+    {
+        "context": "Pane",
+        "bindings": {
+            "ctrl-shift-g": "search::SelectPreviousMatch"
+        }
+    },
+    {
+        "context": "Pane",
+        "unbind": {
+            "cmd-shift-g": "search::SelectPreviousMatch"
+        }
+    }
 ]

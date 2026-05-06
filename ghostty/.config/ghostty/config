@@ -49,16 +49,16 @@
 # resize-overlay-duration = 4s 200ms
 
 # UI/theme
-theme = Catppuccin Macchiato
-background-opacity = 0.9
-background-blur-radius = 40
+theme = One Dark Two
+background-opacity = 0.8
+background-blur-radius = 50
 macos-titlebar-style = transparent
 window-decoration = auto
 macos-titlebar-style = tabs
 
 # Font
-font-family = SF Mono
 font-thicken = true
+font-family = IBM Plex Mono
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig

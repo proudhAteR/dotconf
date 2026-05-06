@@ -2,11 +2,9 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🎨 THEME & FONTS
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "Catppuccin Macchiato - No Italics",
-    "ui_font_size": 14,
-    "buffer_font_size": 13,
-    "ui_font_family": "SF Mono",
-    "buffer_font_family": "SF Mono",
+    "theme": "One Dark",
+    "ui_font_family": "IBM Plex Mono",
+    "buffer_font_family": "IBM Plex Mono",
     "buffer_font_fallbacks": [
         "FiraMono Nerd Font"
     ],
@@ -22,7 +20,7 @@
     },
     "agent": {
         "sidebar_side": "left",
-        "dock": "right",
+        "dock": "left",
         "favorite_models": [],
         "model_parameters": []
     },
@@ -63,10 +61,8 @@
     "use_system_prompts": true,
     "base_keymap": "VSCode",
     "cursor_shape": "block",
-    "cursor_blink": true,
     "hide_mouse": "on_typing_and_movement",
     "current_line_highlight": "none",
-    "rounded_selection": true,
     "show_whitespaces": "selection",
     "scroll_beyond_last_line": "off",
     "double_click_in_multibuffer": "open",
@@ -83,7 +79,7 @@
     "auto_signature_help": false,
     "show_completions_on_input": true,
     "completions": {
-        "words_min_length": 4
+        "words_min_length": 3
     },
     "edit_predictions": {
         "provider": "none"
@@ -118,7 +114,7 @@
         "enabled": false,
         "show_type_hints": true
     },
-    "soft_wrap": "preferred_line_length",
+    "soft_wrap": "bounded",
     "preferred_line_length": 120,
     "allow_rewrap": "in_comments",
     "auto_indent": "syntax_aware",
@@ -350,6 +346,7 @@
         "button": false,
         "working_directory": "current_project_directory"
     },
+    "cli_default_open_behavior": "new_window",
     // ──────────────────────────────────────────────────────────────────────────────
     // 📡 TELEMETRY
     // ──────────────────────────────────────────────────────────────────────────────

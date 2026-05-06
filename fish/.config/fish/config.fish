@@ -87,8 +87,10 @@ if status is-interactive
     abbr --add gpf "git push --force"
     abbr --add gf "git fetch --prune"
     abbr --add gu "git fetch --prune && git pull --rebase" #update project
+    abbr --add gpl "git pull"
     abbr --add gr "git pull --rebase" #rebase
     abbr --add gd "git diff"
+    abbr --add gds "git diff --stat"
     abbr --add grm "git branch -d" #rm branch
     abbr --add gR "git branch -D"
     abbr --add go "git checkout" #go to branch
