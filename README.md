@@ -18,6 +18,7 @@ To use these configurations effectively, you will need the following tools insta
 *   **[eza](https://eza.rocks/)**: A modern, maintained replacement for `ls`.
 *   **[zoxide](https://github.com/ajeetdsouza/zoxide)**: A smarter `cd` command.
 *   **[fzf](https://github.com/junegunn/fzf)**: A general-purpose command-line fuzzy finder.
+* **[fortune](https://jeffmilner.com/index.php/2023/09/19/fortune/)**: A command used to generate random quotes in the terminal
 
 ### Editors & Tools
 *   **[Zed](https://zed.dev/)**: High-performance text editor.
