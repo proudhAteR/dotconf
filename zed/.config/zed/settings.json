@@ -2,11 +2,13 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🎨 THEME & FONTS
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "One Dark",
-    "ui_font_family": "IBM Plex Mono",
-    "buffer_font_family": "IBM Plex Mono",
+    "theme": "Catppuccin Mocha - No Italics",
+    "ui_font_family": "JetBrainsMonoNL Nerd Font Propo",
+    "buffer_font_family": "JetBrainsMonoNL Nerd Font Propo",
+    "buffer_font_size": 13,
+    "ui_font_size": 14,
     "buffer_font_fallbacks": [
-        "FiraMono Nerd Font"
+        "JetBrainsMono Nerd Font"
     ],
     "buffer_font_features": {
         "liga": false,
@@ -52,6 +54,9 @@
     "debugger": {
         "dock": "bottom"
     },
+    "preview_tabs": {
+        "enabled": false
+    },
     // ──────────────────────────────────────────────────────────────────────────────
     // ✍️ EDITOR BEHAVIOR
     // ──────────────────────────────────────────────────────────────────────────────
@@ -61,7 +66,7 @@
     "use_system_prompts": true,
     "base_keymap": "VSCode",
     "cursor_shape": "block",
-    "hide_mouse": "on_typing_and_movement",
+    "hide_mouse": "on_typing_and_action",
     "current_line_highlight": "none",
     "show_whitespaces": "selection",
     "scroll_beyond_last_line": "off",
@@ -166,6 +171,7 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🧩 LANGUAGES & LSP
     // ──────────────────────────────────────────────────────────────────────────────
+    "code_lens": "on",
     "languages": {
         "CSS": {
             "language_servers": [

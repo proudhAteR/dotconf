@@ -1,0 +1,221 @@
+/* ---- Font stack used everywhere below ---- */
+:root {
+    --font-stack: "JetBrainsMonoNL Nerd Font Propo", "JetBrainsMono Nerd Font", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+/* ============================================================
+   1. GENERIC SELECTORS — semantic monospace elements
+   ============================================================ */
+code,
+pre,
+kbd,
+samp,
+tt,
+var,
+xmp,
+plaintext,
+listing,
+textarea,
+input[type="text"][class*="code"],
+input[type="text"][class*="mono"],
+.code,
+.codehilite,
+.highlight,
+.hljs,
+.prettyprint,
+.monospace,
+.mono,
+[class*="monospace"],
+[class*="Monospace"],
+[class*="codeblock"],
+[class*="CodeBlock"],
+[class*="code-block"],
+[class*="code_block"],
+[class*="codeBlock"] {
+    font-family: var(--font-stack);
+}
+
+/* ============================================================
+   2. CSS CUSTOM PROPERTIES — sites that theme via vars
+   ============================================================ */
+:root,
+:host,
+html,
+body {
+    /* GitHub */
+    --fontStack-monospace: var(--font-stack) !important;
+    --fontStack-mono: var(--font-stack) !important;
+
+    /* Material / MkDocs / Docusaurus / Algolia */
+    --md-code-font: var(--font-stack) !important;
+    --md-code-font-family: var(--font-stack) !important;
+    --ifm-font-family-monospace: var(--font-stack) !important;
+    --font-mono: var(--font-stack) !important;
+    --font-family-monospace: var(--font-stack) !important;
+    --font-family-mono: var(--font-stack) !important;
+    --code-font: var(--font-stack) !important;
+    --code-font-family: var(--font-stack) !important;
+    --monospace-font: var(--font-stack) !important;
+    --monospace-font-family: var(--font-stack) !important;
+
+    /* Notion */
+    --font_mono: var(--font-stack) !important;
+
+    /* Discord */
+    --font-code: var(--font-stack) !important;
+
+    /* Stack Overflow */
+    --theme-fc-mono: var(--font-stack) !important;
+    --theme-fc-monospace: var(--font-stack) !important;
+}
+
+/* ============================================================
+   3. GITHUB
+   ============================================================ */
+.blob-code,
+.blob-code-inner,
+.react-code-text,
+.react-line-number,
+.react-file-line,
+.react-blob-print-hide,
+.markdown-body code,
+.markdown-body pre,
+.markdown-body tt,
+.CodeMirror,
+.cm-editor,
+.cm-content,
+.cm-line,
+[class*="blob-code"],
+[class*="ReactBlobLines"],
+[class*="DiffLineTableCellParts"],
+[data-testid*="code"] {
+    font-family: var(--font-stack) !important;
+}
+
+/* ============================================================
+   4. STACK OVERFLOW / STACK EXCHANGE
+   ============================================================ */
+.s-code-block,
+.s-prose code,
+.s-prose pre,
+.post-text code,
+.post-text pre,
+.answer-text code,
+.answer-text pre {
+    font-family: var(--font-stack) !important;
+}
+
+/* ============================================================
+   5. MDN / READ THE DOCS / GITBOOK / DOCUSAURUS / NEXTRA
+   ============================================================ */
+.notranslate,
+.code-example,
+.example-good,
+.example-bad,
+.token,
+.prism-code,
+[class*="prism-"],
+[class*="Prism"],
+[class*="codeBlock_"],
+[class*="codeBlockLines_"],
+[class*="codeBlockTitle_"],
+[class*="DocSearch-"][class*="code"],
+[class*="hljs-"],
+.theme-code-block,
+.shiki,
+.shiki span {
+    font-family: var(--font-stack) !important;
+}
+
+/* ============================================================
+   6. DISCORD / SLACK / LINEAR (web)
+   ============================================================ */
+[class*="markup_"] code,
+[class*="markup_"] pre,
+[class*="codeRedacted_"],
+[class*="hljs"],
+.c-mrkdwn__pre,
+.c-mrkdwn__code,
+.ql-code-block,
+[data-slate-leaf="true"][class*="code"] {
+    font-family: var(--font-stack) !important;
+}
+
+/* ============================================================
+   7. REDDIT (new + old)
+   ============================================================ */
+.md code,
+.md pre,
+[data-testid="comment"] code,
+[data-testid="comment"] pre,
+shreddit-comment code,
+shreddit-comment pre {
+    font-family: var(--font-stack) !important;
+}
+
+/* ============================================================
+   9. JIRA / CONFLUENCE / LINEAR / ASANA
+   ============================================================ */
+[class*="code-block"],
+[data-block-type="codeBlock"],
+.code,
+.css-code,
+.akEditor code,
+.akEditor pre {
+    font-family: var(--font-stack) !important;
+}
+
+/* ============================================================
+   10. CHATGPT / CLAUDE / GEMINI / PERPLEXITY
+   ============================================================ */
+[class*="code-"][class*="block"],
+[class*="markdown"] code,
+[class*="markdown"] pre,
+[class*="prose"] code,
+[class*="prose"] pre {
+    font-family: var(--font-stack) !important;
+}
+
+.font-mono:not([class*="icon"]):not([class*="symbol"]),
+[class~="font-mono"]:not([class*="icon"]):not([class*="symbol"]) {
+    font-family: var(--font-stack) !important;
+}
+
+/* ============================================================
+   11. FALLBACK SLEDGEHAMMER — anything declaring monospace
+   ============================================================ */
+[style*="monospace" i] {
+    font-family: var(--font-stack) !important;
+}
+
+/* If a site sets a generic monospace via Tailwind */
+.font-mono,
+.\!font-mono,
+[class~="font-mono"] {
+    font-family: var(--font-stack) !important;
+}
+
+/* ============================================================
+   12. NUKE LIGATURES
+   ============================================================ */
+
+code, pre, kbd, samp, tt, var,
+[class*="mono"], [class*="code"] {
+    font-feature-settings: "liga" 0, "calt" 0 !important;
+    font-variant-ligatures: none !important;
+}
+
+@-moz-document url-prefix("https://gemini.google.com") {
+    /* Reset everything this stylesheet touches */
+    :root {
+        --fontStack-monospace: unset !important;
+        --font-mono: unset !important;
+        --font-family-monospace: unset !important;
+    }
+    [class*="prose"], [class*="markdown"],
+    .font-mono, [class~="font-mono"],
+    [style*="monospace" i] {
+        font-family: unset !important;
+    }
+}

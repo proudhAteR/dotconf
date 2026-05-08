@@ -136,6 +136,7 @@ if status is-interactive
     alias conf="zed ~/dotconf"
     alias sam="docker_purge" # script created by sam to purge docker https://github.com/sam0rr/docker_purge.git
     alias boo="ghostty +boo"
+    alias sf="set-font"
 
     #docs
     abbr --add ffdoc "cat ~/dotconf/fish/.config/fish/fzf.txt"

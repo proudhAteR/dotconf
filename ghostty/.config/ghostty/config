@@ -49,7 +49,7 @@
 # resize-overlay-duration = 4s 200ms
 
 # UI/theme
-theme = One Dark Two
+theme = Catppuccin Mocha 
 background-opacity = 0.8
 background-blur-radius = 50
 macos-titlebar-style = transparent
@@ -57,8 +57,8 @@ window-decoration = auto
 macos-titlebar-style = tabs
 
 # Font
+font-family = JetBrainsMonoNL Nerd Font Propo
 font-thicken = true
-font-family = IBM Plex Mono
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
