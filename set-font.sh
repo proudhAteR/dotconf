@@ -11,7 +11,13 @@ if [[ $# -lt 1 ]]; then
 fi
 
 FONT="$1"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SOURCE="${BASH_SOURCE[0]}"
+while [[ -L "$SOURCE" ]]; do
+    DIR="$(cd "$(dirname "$SOURCE")" && pwd)"
+    SOURCE="$(readlink "$SOURCE")"
+    [[ "$SOURCE" != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+SCRIPT_DIR="$(cd "$(dirname "$SOURCE")" && pwd)"
 
 GHOSTTY_CFG="$SCRIPT_DIR/ghostty/.config/ghostty/config"
 ZED_CFG="$SCRIPT_DIR/zed/.config/zed/settings.json"
