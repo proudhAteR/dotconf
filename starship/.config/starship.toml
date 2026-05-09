@@ -51,9 +51,9 @@ renamed = ""
 typechanged = ""
 untracked = ""
 staged = ""
-ahead = "[⇡](bold green bg:yellow)[${count}](fg:244 bg:yellow)"
-behind = "[⇣](bold red bg:yellow)[${count}](fg:244 bg:yellow)"
-diverged = "[⇡](bold green bg:yellow)[${ahead_count}](fg:244 bg:yellow)[/](fg:244 bg:yellow)[⇣](bold red bg:yellow)[${behind_count}](fg:244 bg:yellow)"
+ahead = "[⇡](bold mauve bg:yellow)[${count}](fg:crust bg:yellow)"
+behind = "[⇣](bold maroon bg:yellow)[${count}](fg:crust bg:yellow)"
+diverged = "[⇡](bold mauve bg:yellow)[${ahead_count}](fg:crust bg:yellow)[/](fg:crust bg:yellow)[⇣](bold maroon bg:yellow)[${behind_count}](fg:crust bg:yellow)"
 
 [git_metrics]
 disabled = false
