@@ -3,12 +3,12 @@
     // 🎨 THEME & FONTS
     // ──────────────────────────────────────────────────────────────────────────────
     "theme": "Catppuccin Mocha - No Italics",
-    "ui_font_family": "JetBrainsMonoNL Nerd Font Propo",
-    "buffer_font_family": "JetBrainsMonoNL Nerd Font Propo",
+    "ui_font_family": "Lilex",
+    "buffer_font_family": "Lilex",
     "buffer_font_size": 13,
     "ui_font_size": 14,
     "buffer_font_fallbacks": [
-        "JetBrainsMono Nerd Font"
+        "JetBrainsMono Nerd Font Propo"
     ],
     "buffer_font_features": {
         "liga": false,
@@ -190,12 +190,11 @@
             "language_servers": [
                 "intelephense",
                 "!phpactor",
-                "!intelephense",
                 "!phptools",
                 "!emmet"
             ],
             "format_on_save": "on",
-            "formatter": "language_server"
+            "formatter": "language_server",
         },
         "Latte": {
             "language_servers": [
@@ -287,6 +286,11 @@
                         "!env mapping"
                     ]
                 }
+            }
+        },
+        "intelephense": {
+            "initialization_options": {
+                "licenceKey": "~/.config/zed/php-lsp.key.txt"
             }
         }
     },

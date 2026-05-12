@@ -2,7 +2,7 @@
 
 /* ---- Font stack used everywhere below ---- */
 :root {
-    --font-stack: "JetBrainsMonoNL Nerd Font Propo", "JetBrainsMono Nerd Font", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    --font-stack: "Lilex", "JetBrainsMono Nerd Font", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
 

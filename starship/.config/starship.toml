@@ -1,15 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[░▒▓](red)\
+[░▒▓](mauve)\
 $os\
 $username\
 $sudo\
-[](bg:peach fg:red)\
+[](bg:peach fg:mauve)\
 $directory\
-[](bg:yellow fg:peach)\
+[](bg:red fg:peach)\
 $git_branch$git_status\
-[](fg:yellow bg:green)\
+[](fg:red bg:green)\
 $c\
 $python\
 $rust\
@@ -38,12 +38,12 @@ symbol = " "
 
 [git_branch]
 symbol = " "
-style = "bg:yellow"
-format = '[[ $symbol$branch ](fg:crust bg:yellow)]($style)'
+style = "bg:red"
+format = '[[ $symbol$branch ](fg:crust bg:red)]($style)'
 
 [git_status]
-style = "bg:yellow"
-format = '[[($all_status$ahead_behind )](fg:crust bg:yellow)]($style)'
+style = "bg:red"
+format = '[[($all_status$ahead_behind )](fg:crust bg:red)]($style)'
 modified = "*"
 stashed = ""
 deleted = ""
@@ -51,9 +51,9 @@ renamed = ""
 typechanged = ""
 untracked = ""
 staged = ""
-ahead = "[⇡](bold mauve bg:yellow)[${count}](fg:crust bg:yellow)"
-behind = "[⇣](bold maroon bg:yellow)[${count}](fg:crust bg:yellow)"
-diverged = "[⇡](bold mauve bg:yellow)[${ahead_count}](fg:crust bg:yellow)[/](fg:crust bg:yellow)[⇣](bold maroon bg:yellow)[${behind_count}](fg:crust bg:yellow)"
+ahead = "[⇡](bold green bg:red)[${count}](fg:crust bg:red)"
+behind = "[⇣](bold sky bg:red)[${count}](fg:crust bg:red)"
+diverged = "[⇡](bold green bg:red)[${ahead_count}](fg:crust bg:red)[/](fg:crust bg:red)[⇣](bold sky bg:red)[${behind_count}](fg:crust bg:red)"
 
 [git_metrics]
 disabled = false
@@ -63,7 +63,7 @@ format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 
 [os]
 disabled = false
-style = "bg:red fg:crust"
+style = "bg:mauve fg:crust"
 
 [os.symbols]
 Windows = ""
@@ -89,12 +89,12 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "bg:red fg:crust"
-style_root = "bg:red fg:crust"
+style_user = "bg:mauve fg:crust"
+style_root = "bg:mauve fg:crust"
 format = '[ proudhater]($style)'
 
 [sudo]
-style = "bg:red fg:crust"
+style = "bg:mauve fg:crust"
 symbol = "🧙"
 format = '[ $symbol]($style)'
 disabled = false

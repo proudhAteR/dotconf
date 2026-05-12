@@ -57,7 +57,7 @@ window-decoration = auto
 macos-titlebar-style = tabs
 
 # Font
-font-family = JetBrainsMonoNL Nerd Font Propo
+font-family = Lilex
 font-thicken = true
 font-feature = -calt
 font-feature = -liga

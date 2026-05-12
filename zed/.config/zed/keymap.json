@@ -46,6 +46,12 @@
         }
     },
     {
+        "context": "Editor",
+        "bindings": {
+            "alt-cmd-v": "markdown::OpenPreviewToTheSide"
+        }
+    },
+    {
         "context": "!ContextEditor > (Editor && mode == full)",
         "bindings": {
             "cmd-:": "editor::ToggleInlayHints"

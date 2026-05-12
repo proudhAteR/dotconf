@@ -4,3 +4,4 @@
 **/.gemini/*
 !**/.gemini/themes
 !**/.gemini/settings.example.json
+*key*
