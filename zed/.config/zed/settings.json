@@ -2,11 +2,11 @@
     // ──────────────────────────────────────────────────────────────────────────────
     // 🎨 THEME & FONTS
     // ──────────────────────────────────────────────────────────────────────────────
-    "theme": "Catppuccin Mocha - No Italics",
-    "ui_font_family": "Lilex",
-    "buffer_font_family": "Lilex",
+    "theme": "Tokyo Night",
+    "ui_font_family": "JetBrains Mono",
+    "buffer_font_family": "JetBrains Mono",
+    "ui_font_size": 13,
     "buffer_font_size": 13,
-    "ui_font_size": 14,
     "buffer_font_fallbacks": [
         "JetBrainsMono Nerd Font Propo"
     ],
@@ -191,7 +191,6 @@
                 "intelephense",
                 "!phpactor",
                 "!phptools",
-                "!emmet"
             ],
             "format_on_save": "on",
             "formatter": "language_server",
@@ -288,11 +287,6 @@
                 }
             }
         },
-        "intelephense": {
-            "initialization_options": {
-                "licenceKey": "~/.config/zed/php-lsp.key.txt"
-            }
-        }
     },
     // ──────────────────────────────────────────────────────────────────────────────
     // 📂 FILE TYPES & EXCLUSIONS

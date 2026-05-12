@@ -49,7 +49,7 @@
 # resize-overlay-duration = 4s 200ms
 
 # UI/theme
-theme = Catppuccin Mocha 
+theme = TokyoNight 
 background-opacity = 0.8
 background-blur-radius = 50
 macos-titlebar-style = transparent
@@ -57,7 +57,7 @@ window-decoration = auto
 macos-titlebar-style = tabs
 
 # Font
-font-family = Lilex
+font-family = JetBrains Mono
 font-thicken = true
 font-feature = -calt
 font-feature = -liga
