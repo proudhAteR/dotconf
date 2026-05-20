@@ -57,7 +57,8 @@ window-decoration = auto
 macos-titlebar-style = tabs
 
 # Font
-font-family = JetBrains Mono
+font-size = 15
+font-family = IBM Plex Mono
 font-thicken = true
 font-feature = -calt
 font-feature = -liga

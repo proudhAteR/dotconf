@@ -25,7 +25,7 @@ $dotnet\
 $package\
 [](fg:green bg:sapphire)\
 $docker_context\
-[ ](fg:sapphire)\
+[ ](fg:sapphire)\
 $all$fill$cmd_duration\
 $line_break\
 $character"""
