@@ -9,7 +9,9 @@ $sudo\
 $directory\
 [](bg:red fg:peach)\
 $git_branch$git_status\
-[](fg:red bg:green)\
+[ ](fg:red)\
+$all$fill\
+([](fg:green)\
 $c\
 $python\
 $rust\
@@ -23,10 +25,10 @@ $haskell\
 $swift\
 $dotnet\
 $package\
-[](fg:green bg:sapphire)\
+[](bg:sapphire fg:green)\
 $docker_context\
-[ ](fg:sapphire)\
-$all$fill$cmd_duration\
+[](fg:sapphire))\
+$cmd_duration\
 $line_break\
 $character"""
 
@@ -206,11 +208,67 @@ disabled= true
 
 [cmd_duration]
 show_milliseconds = true
-format = " in $duration "
+format = "  in $duration "
 style = "bg:lavender"
 disabled = false
 show_notifications = true
 min_time_to_notify = 45000
+
+[palettes.vivid]
+rosewater = "#f7c8d4"
+flamingo = "#f0a6bd"
+pink = "#da627d"
+mauve = "#9a348e"
+red = "#fca17d"
+maroon = "#da627d"
+peach = "#da627d"
+yellow = "#ffd166"
+green = "#86bbd8"
+teal = "#06969a"
+sky = "#86bbd8"
+sapphire = "#06969a"
+blue = "#33658a"
+lavender = "#33658a"
+text = "#f8f8f2"
+subtext1 = "#e6e6e6"
+subtext0 = "#cfd5df"
+overlay2 = "#9aa9bd"
+overlay1 = "#74869c"
+overlay0 = "#5b6f86"
+surface2 = "#33658a"
+surface1 = "#1f4e6f"
+surface0 = "#17364f"
+base = "#101824"
+mantle = "#0b111a"
+crust = "#090c0c"
+
+[palettes.tokyo]
+rosewater = "#a3aed2"
+flamingo = "#c0caf5"
+pink = "#bb9af7"
+mauve = "#bb9af7"
+red = "#f7768e"
+maroon = "#ff757f"
+peach = "#7aa2f7"
+yellow = "#ffc777"
+green = "#9ece6a"
+teal = "#4fd6be"
+sky = "#7dcfff"
+sapphire = "#7dcfff"
+blue = "#7aa2f7"
+lavender = "#c0caf5"
+text = "#c0caf5"
+subtext1 = "#a9b1d6"
+subtext0 = "#9aa5ce"
+overlay2 = "#737aa2"
+overlay1 = "#565f89"
+overlay0 = "#414868"
+surface2 = "#394260"
+surface1 = "#212736"
+surface0 = "#1d2230"
+base = "#16161e"
+mantle = "#090c0c"
+crust = "#1a1b26"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

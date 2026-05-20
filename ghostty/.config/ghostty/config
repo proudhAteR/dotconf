@@ -58,7 +58,7 @@ macos-titlebar-style = tabs
 
 # Font
 font-size = 15
-font-family = IBM Plex Mono
+font-family = Google Sans Code
 font-thicken = true
 font-feature = -calt
 font-feature = -liga

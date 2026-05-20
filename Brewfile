@@ -26,6 +26,7 @@ brew "gh"
 cask "ghostty"
 cask "zed"
 cask "orbstack"
+cask "rectangle"
 
 # ── Fonts ─────────────────────────────────────────────────────────────────────
 cask "font-jetbrains-mono-nerd-font"

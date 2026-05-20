@@ -3,8 +3,8 @@
     // 🎨 THEME & FONTS
     // ──────────────────────────────────────────────────────────────────────────────
     "theme": "Tokyo Night",
-    "ui_font_family": "IBM Plex Mono",
-    "buffer_font_family": "IBM Plex Mono",
+    "ui_font_family": "Google Sans Code",
+    "buffer_font_family": "Google Sans Code",
     "buffer_font_fallbacks": [
         "JetBrainsMono Nerd Font Propo"
     ],
