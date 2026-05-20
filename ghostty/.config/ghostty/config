@@ -57,8 +57,7 @@ window-decoration = auto
 macos-titlebar-style = tabs
 
 # Font
-font-size = 15
-font-family = Google Sans Code
+font-family = JetBrains Mono
 font-thicken = true
 font-feature = -calt
 font-feature = -liga

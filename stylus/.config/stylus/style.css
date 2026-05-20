@@ -1,6 +1,6 @@
 /* ---- Font stack used everywhere below ---- */
 :root {
-    --font-stack: "Google Sans Code", "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    --font-stack: "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
 
