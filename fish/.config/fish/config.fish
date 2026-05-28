@@ -110,7 +110,7 @@ if status is-interactive
 
     #Github CLI
     abbr --add g- "gh dash"
-    abbr --add gweb "gh repo view --web"
+    abbr --add gw "gh repo view --web"
 
     # Docker
     abbr --add d "lazydocker"
