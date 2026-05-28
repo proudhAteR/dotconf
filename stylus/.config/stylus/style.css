@@ -1,6 +1,6 @@
 /* ---- Font stack used everywhere below ---- */
 :root {
-    --font-stack: "IBM Plex Mono", "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    --font-stack: "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
 
@@ -291,8 +291,8 @@ shreddit-comment pre {
 /* ============================================================
    12. NUKE LIGATURES
    ============================================================ */
-/*code, pre, kbd, samp, tt, var,
+code, pre, kbd, samp, tt, var,
 [class*="mono"], [class*="code"] {
     font-feature-settings: "liga" 0, "calt" 0 !important;
     font-variant-ligatures: none !important;
-}*/
+}

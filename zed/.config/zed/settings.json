@@ -2,12 +2,17 @@
   // ──────────────────────────────────────────────────────────────────────────────
   // 🎨 THEME & FONTS
   // ──────────────────────────────────────────────────────────────────────────────
-  "theme": "Tokyo Night",
-  "ui_font_family": "IBM Plex Mono",
-  "buffer_font_family": "IBM Plex Mono",
+  "ui_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrains Mono",
+  "ui_font_size": 13,
+  "buffer_font_size": 13,
   "buffer_font_fallbacks": [
     "JetBrainsMono Nerd Font Propo"
   ],
+  "buffer_font_features": {
+    "liga": false,
+    "calt": false,
+  },
   // ──────────────────────────────────────────────────────────────────────────────
   // 🖼️ UI COMPONENTS
   // ──────────────────────────────────────────────────────────────────────────────
