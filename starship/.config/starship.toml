@@ -32,7 +32,7 @@ $cmd_duration\
 $line_break\
 $character"""
 
-palette = 'catppuccin_frappe'
+palette = 'koda_dark'
 command_timeout = 5000
 
 [fill]
@@ -46,16 +46,16 @@ format = '[[ $symbol$branch ](fg:crust bg:red)]($style)'
 [git_status]
 style = "bg:red"
 format = '[[($all_status$ahead_behind )](fg:crust bg:red)]($style)'
-modified = "*"
+modified = "* "
 stashed = ""
 deleted = ""
 renamed = ""
 typechanged = ""
 untracked = ""
 staged = ""
-ahead = "[⇡](bold green bg:red)[${count}](fg:crust bg:red)"
-behind = "[⇣](bold sky bg:red)[${count}](fg:crust bg:red)"
-diverged = "[⇡](bold green bg:red)[${ahead_count}](fg:crust bg:red)[/](fg:crust bg:red)[⇣](bold sky bg:red)[${behind_count}](fg:crust bg:red)"
+ahead = "[↑](bold green bg:red)[${count}](fg:crust bg:red)"
+behind = "[↓](bold sky bg:red)[${count}](fg:crust bg:red)"
+diverged = "[↑](bold green bg:red)[${ahead_count}](fg:crust bg:red)[/](fg:crust bg:red)[↓](bold sky bg:red)[${behind_count}](fg:crust bg:red)"
 
 [git_metrics]
 disabled = false
@@ -381,3 +381,31 @@ surface0 = "#363a4f"
 base = "#24273a"
 mantle = "#1e2030"
 crust = "#181926"
+
+[palettes.koda_dark]
+rosewater = "#b0b0b0"
+flamingo = "#ffffff"
+pink = "#777777"
+mauve = "#474747"
+red = "#b0b0b0"
+maroon = "#474747"
+peach = "#777777"
+yellow = "#b0b0b0"
+green = "#777777"
+teal = "#777777"
+sky = "#777777"
+sapphire = "#474747"
+blue = "#777777"
+lavender = "#777777"
+text = "#b0b0b0"
+subtext1 = "#b0b0b0"
+subtext0 = "#777777"
+overlay2 = "#777777"
+overlay1 = "#474747"
+overlay0 = "#474747"
+surface2 = "#474747"
+surface1 = "#272727"
+surface0 = "#1a1a1a"
+base = "#101010"
+mantle = "#0c0c0c"
+crust = "#0c0c0c"

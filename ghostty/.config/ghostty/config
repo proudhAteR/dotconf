@@ -49,14 +49,15 @@
 # resize-overlay-duration = 4s 200ms
 
 # UI/theme
-theme = Atom One Dark 
-background-opacity = 0.85
+theme = Koda
+background-opacity = 0.9
 background-blur-radius = 50
 macos-titlebar-style = transparent
 window-decoration = auto
 macos-titlebar-style = tabs
 
 # Font
+font-size = 14
 font-family = JetBrains Mono
 font-thicken = true
 font-feature = -calt

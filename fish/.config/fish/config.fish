@@ -34,12 +34,16 @@ if type -q fzf
     fzf_configure_bindings --directory=\cf --git_log=\cg --history=\cr --variables=\cv
 end
 
+#6. Carapace config for completion
+set -Ux CARAPACE_BRIDGES 'zsh,fish,bash,inshellisense' # optional
+carapace _carapace | source
+
 # ─── Interactive Session Only ─────────────────────────────────────────────────
 if status is-interactive
 
     # Fastfetch (System Info)
     if type -q fastfetch
-        fastfetch
+        fastfetch --config koda.jsonc
     end
     abbr --add fast fastfetch
 

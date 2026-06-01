@@ -2,13 +2,18 @@
   // ──────────────────────────────────────────────────────────────────────────────
   // 🎨 THEME & FONTS
   // ──────────────────────────────────────────────────────────────────────────────
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "theme": "Koda Dark",
   "ui_font_family": "JetBrains Mono",
   "buffer_font_family": "JetBrains Mono",
-  "ui_font_size": 13,
-  "buffer_font_size": 13,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
   "buffer_font_fallbacks": [
     "JetBrainsMono Nerd Font Propo"
   ],
+  "buffer_line_height": {
+    "custom": 1.6
+  },
   "buffer_font_features": {
     "liga": false,
     "calt": false,
@@ -44,9 +49,6 @@
     "show_onboarding_banner": false,
     "show_menus": false
   },
-  "debugger": {
-    "dock": "bottom"
-  },
   "preview_tabs": {
     "enabled": false
   },
@@ -60,7 +62,6 @@
   "base_keymap": "VSCode",
   "cursor_shape": "block",
   "hide_mouse": "on_typing_and_action",
-  "current_line_highlight": "none",
   "show_whitespaces": "selection",
   "scroll_beyond_last_line": "off",
   "double_click_in_multibuffer": "open",
@@ -69,6 +70,10 @@
     "after_delay": {
       "milliseconds": 1000
     }
+  },
+  "current_line_highlight": "line",
+  "indent_guides": {
+    "enabled": false
   },
   // ──────────────────────────────────────────────────────────────────────────────
   // 🧠 AI & COMPLETIONS
@@ -128,16 +133,10 @@
     "source.fixAll.ts": true,
     "source.organizeImports": true
   },
-  "inlay_hints": {
-    "show_background": false,
-    "enabled": false,
-    "show_type_hints": true
-  },
-  "soft_wrap": "bounded",
+  "soft_wrap": "prefer_line",
   "preferred_line_length": 120,
   "allow_rewrap": "in_comments",
   "auto_indent": "syntax_aware",
-  "auto_indent_on_paste": true,
   "always_treat_brackets_as_autoclosed": true,
   // ──────────────────────────────────────────────────────────────────────────────
   // 🌲 PANELS
@@ -161,7 +160,6 @@
     "tree_view": true,
     "show_count_badge": true,
     "dock": "right",
-    "file_icons": false
   },
   "outline_panel": {
     "dock": "right"
