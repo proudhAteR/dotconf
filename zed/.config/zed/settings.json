@@ -4,16 +4,13 @@
   // ──────────────────────────────────────────────────────────────────────────────
   "icon_theme": "Colored Zed Icons Theme Dark",
   "theme": "Koda Dark",
-  "ui_font_family": "JetBrains Mono",
-  "buffer_font_family": "JetBrains Mono",
+  "ui_font_family": "IBM Plex Mono",
+  "buffer_font_family": "IBM Plex Mono",
   "ui_font_size": 14,
   "buffer_font_size": 14,
   "buffer_font_fallbacks": [
     "JetBrainsMono Nerd Font Propo"
   ],
-  "buffer_line_height": {
-    "custom": 1.6
-  },
   "buffer_font_features": {
     "liga": false,
     "calt": false,
@@ -43,7 +40,7 @@
   },
   "gutter": {
     "min_line_number_digits": 0,
-    "folds": true
+    "folds": false
   },
   "title_bar": {
     "show_onboarding_banner": false,

@@ -127,8 +127,7 @@
             "color": "#d9ba73"
           },
           "function": {
-            "color": "#ffffff",
-            "font_weight": 600
+            "color": "#ffffff"
           },
           "function.method": {
             "color": "#ffffff"

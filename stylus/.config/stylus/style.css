@@ -1,7 +1,18 @@
 /* ---- Font stack used everywhere below ---- */
 :root {
-    --font-stack: "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    --font-stack: "IBM Plex Mono", "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+/* ============================================================
+   Global configuration
+   ============================================================ */
+*:not([class*="icon"]):not([class*="Icon"]):not([class*="symbol"]):not([class*="Symbol"]):not([class*="emoji"]):not([class*="material"]):not([class*="lucide"]):not([data-icon]):not([aria-hidden="true"]) {
+    font-family: var(--font-stack) !important;
+}
+
+*:not([class*="ytp-spinner"]):not([class*="loading"]):not([class*="spinner"]):not([class*="circle"]) {
+    border-radius: 0px !important;
 }
 
 /* ============================================================
@@ -248,7 +259,7 @@ shreddit-comment pre {
 }
 
 /* ============================================================
-   9. JIRA / CONFLUENCE / LINEAR / ASANA
+   8. JIRA / CONFLUENCE / LINEAR / ASANA
    ============================================================ */
 [class*="code-block"],
 [data-block-type="codeBlock"],
@@ -260,7 +271,7 @@ shreddit-comment pre {
 }
 
 /* ============================================================
-   10. CHATGPT / CLAUDE / GEMINI / PERPLEXITY
+   9. CHATGPT / CLAUDE / GEMINI / PERPLEXITY
    ============================================================ */
 [class*="code-"][class*="block"],
 [class*="markdown"] code,
@@ -276,7 +287,7 @@ shreddit-comment pre {
 }
 
 /* ============================================================
-   11. FALLBACK SLEDGEHAMMER — anything declaring monospace
+   10. FALLBACK SLEDGEHAMMER — anything declaring monospace
    ============================================================ */
 [style*="monospace" i] {
     font-family: var(--font-stack) !important;
@@ -289,10 +300,16 @@ shreddit-comment pre {
 }
 
 /* ============================================================
-   12. NUKE LIGATURES
+   11. NUKE LIGATURES
    ============================================================ */
-code, pre, kbd, samp, tt, var,
-[class*="mono"], [class*="code"] {
+code,
+pre,
+kbd,
+samp,
+tt,
+var,
+[class*="mono"]:not([class*="icon"]):not([class*="symbol"]):not([class*="emoji"]),
+[class*="code"]:not([class*="icon"]):not([class*="symbol"]):not([class*="emoji"]) {
     font-feature-settings: "liga" 0, "calt" 0 !important;
     font-variant-ligatures: none !important;
 }
