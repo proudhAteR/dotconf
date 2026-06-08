@@ -57,12 +57,9 @@ window-decoration = auto
 macos-titlebar-style = tabs
 
 # Font
-font-size = 14
-font-family = IBM Plex Mono
+font-size = 15
+font-family = Lilex
 font-thicken = true
-font-feature = -calt
-font-feature = -liga
-font-feature = -dlig
 
 # Cursor configurarion
 cursor-style = block
