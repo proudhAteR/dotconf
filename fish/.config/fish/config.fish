@@ -97,7 +97,7 @@ if status is-interactive
     abbr --add gds "git diff --stat"
     abbr --add grm "git branch -d" #rm branch
     abbr --add gR "git branch -D"
-    abbr --add go "git checkout" #go to branch
+    abbr --add gch "git checkout" #go to branch
     abbr --add gob "git checkout -b"
     abbr --add gb "git branch"
     abbr --add gba "git branch -a" #list all the branches
