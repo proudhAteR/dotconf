@@ -4,10 +4,12 @@
   // ──────────────────────────────────────────────────────────────────────────────
   "icon_theme": "Colored Zed Icons Theme Dark",
   "theme": "Koda Dark",
-  "ui_font_family": "SF Mono",
-  "buffer_font_family": "SF Mono",
+  "buffer_font_size": 14,
+  "ui_font_size": 14,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_fallbacks": [
-    "JetBrainsMono Nerd Font Propo"
+    "JetBrainsMono Nerd Font"
   ],
   // ──────────────────────────────────────────────────────────────────────────────
   // 🖼️ UI COMPONENTS
@@ -41,6 +43,9 @@
     "show_menus": false
   },
   "preview_tabs": {
+    "enabled": false
+  },
+  "indent_guides": {
     "enabled": false
   },
   // ──────────────────────────────────────────────────────────────────────────────
