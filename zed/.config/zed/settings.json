@@ -3,9 +3,14 @@
   // 🎨 THEME & FONTS
   // ──────────────────────────────────────────────────────────────────────────────
   "icon_theme": "Colored Zed Icons Theme Dark",
-  "theme": "Koda Dark",
-  "ui_font_family": "Lilex",
-  "buffer_font_family": "Lilex",
+  "theme": "Tokyo Night",
+  "ui_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrains Mono",
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "buffer_line_height": {
+    "custom": 1.5
+  },
   "buffer_font_fallbacks": [
     "JetBrainsMono Nerd Font Propo"
   ],
@@ -33,13 +38,17 @@
     "skip_focus_for_active_in_search": true
   },
   "gutter": {
-    "folds": false
+    "folds": false,
+    "min_line_number_digits": 0
   },
   "title_bar": {
     "show_onboarding_banner": false,
     "show_menus": false
   },
   "preview_tabs": {
+    "enabled": false
+  },
+  "indent_guides": {
     "enabled": false
   },
   // ──────────────────────────────────────────────────────────────────────────────
@@ -181,7 +190,8 @@
     "Swift": {
       "enable_language_server": true,
       "language_servers": [
-        "sourcekit-lsp"
+        "sourcekit-lsp",
+        "tailwindcss-language-server"
       ],
       "format_on_save": "on"
     },
@@ -242,13 +252,15 @@
             "\\.classList\\.toggle\\(['\"]([^'\"]*)['\"]",
             "\\.classList\\.contains\\(['\"]([^'\"]*)['\"]",
             "\\.classList\\.replace\\(\\s*['\"]([^'\"]*)['\"]",
-            "\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]"
+            "\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]",
+            "\\.class\\(\\s*\"([^\"]*)\"\\s*\\)"
           ]
         },
         "emmetCompletions": true,
         "includeLanguages": {
           "latte": "html",
-          "pug": "html"
+          "pug": "html",
+          "swift": "html"
         },
         "hovers": true
       }
