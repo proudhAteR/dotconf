@@ -3,9 +3,9 @@
   // 🎨 THEME & FONTS
   // ──────────────────────────────────────────────────────────────────────────────
   "icon_theme": "Colored Zed Icons Theme Dark",
-  "theme": "Tokyo Night",
-  "ui_font_family": "Lilex",
-  "buffer_font_family": "Lilex",
+  "theme": "Koda Dark",
+  "ui_font_family": "SF Mono",
+  "buffer_font_family": "SF Mono",
   "buffer_font_fallbacks": [
     "JetBrainsMono Nerd Font Propo"
   ],
@@ -42,9 +42,6 @@
   },
   "preview_tabs": {
     "enabled": false
-  },
-  "indent_guides": {
-    "enabled": true
   },
   // ──────────────────────────────────────────────────────────────────────────────
   // ✍️ EDITOR BEHAVIOR

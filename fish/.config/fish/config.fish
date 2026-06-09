@@ -46,7 +46,7 @@ if status is-interactive
 
     # Fastfetch (System Info)
     if type -q fastfetch
-        fastfetch --config config.jsonc
+        fastfetch --config koda.jsonc
     end
     abbr --add fast fastfetch
 
