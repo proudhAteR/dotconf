@@ -5,6 +5,9 @@ if type -q zed
     set -gx VISUAL "zed --wait"
 end
 
+# Swift developpement
+set -gx PATH $HOME/.swiftly/bin $PATH 
+
 # ─── Path & Integrations ──────────────────────────────────────────────────────
 
 # 1. Homebrew (macOS)
