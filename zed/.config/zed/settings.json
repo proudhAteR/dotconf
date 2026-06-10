@@ -3,11 +3,11 @@
   // 🎨 THEME & FONTS
   // ──────────────────────────────────────────────────────────────────────────────
   "icon_theme": "Colored Zed Icons Theme Dark",
-  "theme": "Koda Dark",
-  "buffer_font_size": 14,
-  "ui_font_size": 14,
-  "ui_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "theme": "Tokyo Night",
+  "buffer_font_size": 13,
+  "ui_font_size": 13,
+  "ui_font_family": "Fira Code",
+  "buffer_font_family": "Fira Code",
   "buffer_font_fallbacks": [
     "JetBrainsMono Nerd Font"
   ],
@@ -46,7 +46,7 @@
     "enabled": false
   },
   "indent_guides": {
-    "enabled": false
+    "enabled": true
   },
   // ──────────────────────────────────────────────────────────────────────────────
   // ✍️ EDITOR BEHAVIOR
