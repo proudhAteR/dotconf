@@ -59,7 +59,6 @@ macos-titlebar-style = tabs
 # Font
 font-size = 13
 font-family = Fira Code
-font-thicken = true
 
 # Cursor configurarion
 cursor-style = block

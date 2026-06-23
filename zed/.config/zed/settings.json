@@ -127,6 +127,9 @@
     "source.organizeImports": true
   },
   "soft_wrap": "prefer_line",
+  "wrap_guides": [
+    120
+  ],
   "preferred_line_length": 120,
   "allow_rewrap": "in_comments",
   "auto_indent": "syntax_aware",
