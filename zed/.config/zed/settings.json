@@ -3,11 +3,11 @@
   // 🎨 THEME & FONTS
   // ──────────────────────────────────────────────────────────────────────────────
   "icon_theme": "Colored Zed Icons Theme Dark",
-  "theme": "Tokyo Night",
-  "buffer_font_size": 13,
-  "ui_font_size": 13,
-  "ui_font_family": "Fira Code",
-  "buffer_font_family": "Fira Code",
+  "theme": "One Dark",
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "ui_font_family": "Lilex",
+  "buffer_font_family": "Lilex",
   "buffer_font_fallbacks": [
     "JetBrainsMono Nerd Font"
   ],
@@ -215,18 +215,13 @@
       "language_servers": [
         "vtsls",
         "!eslint"
-      ],
-      "tab_size": 2
+      ]
     },
     "JavaScript": {
       "language_servers": [
         "vtsls",
         "!eslint"
       ],
-      "tab_size": 2
-    },
-    "JSON": {
-      "tab_size": 2
     },
     "JSONC": {
       "tab_size": 2
